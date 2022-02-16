@@ -1,0 +1,152 @@
+.hero-section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.hero-container {
+		position: relative;
+
+		.hero-text-container {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+
+			.small-text-container {
+				position: relative;
+
+				.small-text {
+					font-size: 1rem;
+					text-transform: capitalize;
+					color: $color-light-grey;
+
+					#first-website {
+						color: $color-primary;
+					}
+
+					#yourself {
+						color: $color-secondary;
+					}
+				}
+
+				#line4 {
+					position: absolute;
+					right: 0;
+				}
+			}
+
+			.big-text {
+				font-family: 'Fira Code', monospace;
+				font-weight: normal;
+				font-size: 1.5rem;
+				text-transform: capitalize;
+				position: relative;
+
+				&::before,
+				&::after {
+					content: '';
+					position: absolute;
+					top: -3px;
+					right: 0;
+					bottom: 0;
+					left: 0;
+				}
+			}
+
+			$typewriterSpeed: 6s;
+			#learn {
+				$steps: 19;
+				$color-blink: $color-white;
+
+				&::before {
+					background: $color-black;
+					animation: typewriter $typewriterSpeed steps($steps) 0.5s
+						forwards;
+				}
+
+				&::after {
+					width: 0.14em;
+					background: $color-blink;
+					visibility: visible;
+					animation: typewriter $typewriterSpeed steps($steps) 0.5s
+							forwards,
+						blink calc(6s / 6) steps($steps) infinite;
+				}
+			}
+
+			#code {
+				$steps: 18;
+				$color-blink: lighten($color-light-grey, 20%);
+
+				&::before {
+					background: $color-black;
+					animation: typewriter $typewriterSpeed steps($steps) 0.5s
+						forwards;
+				}
+
+				&::after {
+					width: 0.14em;
+					background: $color-blink;
+					visibility: visible;
+					animation: typewriter $typewriterSpeed steps($steps) 0.5s
+							forwards,
+						blink calc(6s / 6) steps($steps) infinite;
+				}
+			}
+
+			#build {
+				$steps: 19;
+				$color-blink: $color-light-grey;
+
+				&::before {
+					background: $color-black;
+					animation: typewriter $typewriterSpeed steps($steps) 0.5s
+						forwards;
+				}
+
+				&::after {
+					width: 0.14em;
+					background: $color-blink;
+					visibility: visible;
+					animation: typewriter $typewriterSpeed steps($steps) 0.5s
+							forwards,
+						blink calc(6s / 6) steps($steps) infinite;
+				}
+			}
+
+			@keyframes typewriter {
+				to {
+					left: 100%;
+				}
+			}
+
+			@keyframes blink {
+				to {
+					background: transparent;
+				}
+			}
+		}
+	}
+	.btn {
+		position: absolute;
+		animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) infinite;
+
+		@keyframes arrow-down {
+			from {
+				bottom: 3rem;
+				opacity: 0;
+			}
+			to {
+				bottom: 1.5rem;
+				opacity: 1;
+			}
+		}
+
+		a {
+			.fa-chevron-down {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

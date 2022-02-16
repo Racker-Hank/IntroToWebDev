@@ -81,6 +81,7 @@ select {
 button {
 	background: transparent;
 	border: none;
+	outline: none;
 	display: grid;
 	place-items: center;
 }

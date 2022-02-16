@@ -51,6 +51,7 @@
   background: #000;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  z-index: 100;
 }
 
 .nav-container .menu-items-container .menu-items {
@@ -117,5 +118,172 @@
 .nav-container .menu-item:nth-child(3) {
   -webkit-transition-delay: 1.4s;
           transition-delay: 1.4s;
+}
+
+.hero-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero-section .hero-container {
+  position: relative;
+}
+
+.hero-section .hero-container .hero-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-section .hero-container .hero-text-container .small-text-container {
+  position: relative;
+}
+
+.hero-section .hero-container .hero-text-container .small-text-container .small-text {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #999999;
+}
+
+.hero-section .hero-container .hero-text-container .small-text-container .small-text #first-website {
+  color: #ff3434;
+}
+
+.hero-section .hero-container .hero-text-container .small-text-container .small-text #yourself {
+  color: #5378ff;
+}
+
+.hero-section .hero-container .hero-text-container .small-text-container #line4 {
+  position: absolute;
+  right: 0;
+}
+
+.hero-section .hero-container .hero-text-container .big-text {
+  font-family: 'Fira Code', monospace;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.hero-section .hero-container .hero-text-container .big-text::before, .hero-section .hero-container .hero-text-container .big-text::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-section .hero-container .hero-text-container #learn::before {
+  background: #000;
+  -webkit-animation: typewriter 6s steps(19) 0.5s forwards;
+          animation: typewriter 6s steps(19) 0.5s forwards;
+}
+
+.hero-section .hero-container .hero-text-container #learn::after {
+  width: 0.14em;
+  background: #fff;
+  visibility: visible;
+  -webkit-animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
+          animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
+}
+
+.hero-section .hero-container .hero-text-container #code::before {
+  background: #000;
+  -webkit-animation: typewriter 6s steps(18) 0.5s forwards;
+          animation: typewriter 6s steps(18) 0.5s forwards;
+}
+
+.hero-section .hero-container .hero-text-container #code::after {
+  width: 0.14em;
+  background: #cccccc;
+  visibility: visible;
+  -webkit-animation: typewriter 6s steps(18) 0.5s forwards, blink calc(6s / 6) steps(18) infinite;
+          animation: typewriter 6s steps(18) 0.5s forwards, blink calc(6s / 6) steps(18) infinite;
+}
+
+.hero-section .hero-container .hero-text-container #build::before {
+  background: #000;
+  -webkit-animation: typewriter 6s steps(19) 0.5s forwards;
+          animation: typewriter 6s steps(19) 0.5s forwards;
+}
+
+.hero-section .hero-container .hero-text-container #build::after {
+  width: 0.14em;
+  background: #999999;
+  visibility: visible;
+  -webkit-animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
+          animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.hero-section .btn {
+  position: absolute;
+  -webkit-animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) infinite;
+          animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) infinite;
+}
+
+@-webkit-keyframes arrow-down {
+  from {
+    bottom: 3rem;
+    opacity: 0;
+  }
+  to {
+    bottom: 1.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-down {
+  from {
+    bottom: 3rem;
+    opacity: 0;
+  }
+  to {
+    bottom: 1.5rem;
+    opacity: 1;
+  }
+}
+
+.hero-section .btn a .fa-chevron-down {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
