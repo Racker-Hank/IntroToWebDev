@@ -13,26 +13,25 @@
 			flex-direction: column;
 			gap: 3rem;
 
-			.small-text-container {
+			.small-text {
+				font-size: 1rem;
+				text-transform: capitalize;
+				color: $color-light-grey;
 				position: relative;
 
-				.small-text {
-					font-size: 1rem;
-					text-transform: capitalize;
-					color: $color-light-grey;
-
-					#first-website {
-						color: $color-primary;
-					}
-
-					#yourself {
-						color: $color-secondary;
-					}
+				#first-website {
+					color: $color-primary;
 				}
 
-				#line4 {
+				#yourself {
+					color: $color-secondary;
+				}
+
+				&::after {
+					content: url('../../res/hero/line4.svg');
 					position: absolute;
 					right: 0;
+					bottom: -0.65em;
 				}
 			}
 

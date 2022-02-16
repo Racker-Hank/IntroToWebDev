@@ -149,27 +149,26 @@
   gap: 3rem;
 }
 
-.hero-section .hero-container .hero-text-container .small-text-container {
-  position: relative;
-}
-
-.hero-section .hero-container .hero-text-container .small-text-container .small-text {
+.hero-section .hero-container .hero-text-container .small-text {
   font-size: 1rem;
   text-transform: capitalize;
   color: #999999;
+  position: relative;
 }
 
-.hero-section .hero-container .hero-text-container .small-text-container .small-text #first-website {
+.hero-section .hero-container .hero-text-container .small-text #first-website {
   color: #ff3434;
 }
 
-.hero-section .hero-container .hero-text-container .small-text-container .small-text #yourself {
+.hero-section .hero-container .hero-text-container .small-text #yourself {
   color: #5378ff;
 }
 
-.hero-section .hero-container .hero-text-container .small-text-container #line4 {
+.hero-section .hero-container .hero-text-container .small-text::after {
+  content: url("../../res/hero/line4.svg");
   position: absolute;
   right: 0;
+  bottom: -0.65em;
 }
 
 .hero-section .hero-container .hero-text-container .big-text {
