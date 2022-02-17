@@ -5,14 +5,16 @@ const Nav = () => {
 	return (
 		<div className='nav-container'>
 			<nav>
-				<div className='logo'>
-					<p id='mind'>
-						Mind
-						<span id='x'>X</span>
-					</p>
-				</div>
+				<a href='https://mindx.edu.vn/' target='blank'>
+					<div className='logo'>
+						<p id='mind'>
+							Mind
+							<span id='x'>X</span>
+						</p>
+					</div>
+				</a>
 				<button className='btn' onClick={() => setIsShowMenu(!isShowMenu)}>
-					<i className='fa fa-solid fa-bars'></i>
+					<i className='fas fa-solid fa-bars'></i>
 				</button>
 			</nav>
 			<div

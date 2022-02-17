@@ -41,6 +41,9 @@
 				font-size: 1.5rem;
 				text-transform: capitalize;
 				position: relative;
+				width: max-content;
+				padding-right: 0.125em;
+				margin: 0 auto;
 
 				&::before,
 				&::after {
@@ -55,7 +58,7 @@
 
 			$typewriterSpeed: 6s;
 			#learn {
-				$steps: 19;
+				$steps: 17;
 				$color-blink: $color-white;
 
 				&::before {
@@ -65,7 +68,7 @@
 				}
 
 				&::after {
-					width: 0.14em;
+					width: 0.15em;
 					background: $color-blink;
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
@@ -75,7 +78,7 @@
 			}
 
 			#code {
-				$steps: 18;
+				$steps: 16;
 				$color-blink: lighten($color-light-grey, 20%);
 
 				&::before {
@@ -85,7 +88,7 @@
 				}
 
 				&::after {
-					width: 0.14em;
+					width: 0.15em;
 					background: $color-blink;
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
@@ -95,7 +98,7 @@
 			}
 
 			#build {
-				$steps: 19;
+				$steps: 17;
 				$color-blink: $color-light-grey;
 
 				&::before {
@@ -105,7 +108,7 @@
 				}
 
 				&::after {
-					width: 0.14em;
+					width: 0.15em;
 					background: $color-blink;
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s

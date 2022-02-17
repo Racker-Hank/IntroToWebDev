@@ -13,6 +13,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 .nav-container nav #mind {
@@ -51,7 +52,7 @@
   background: #000;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 100;
+  z-index: 80;
 }
 
 .nav-container .menu-items-container .menu-items {
@@ -82,7 +83,7 @@
 }
 
 .nav-container .menu-items-container .active {
-  color: #fff;
+  color: #fff !important;
 }
 
 .nav-container .showMenu {
@@ -95,6 +96,21 @@
           transform: translateY(0);
 }
 
+.nav-container .showMenu .menu-item:nth-child(1) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.nav-container .showMenu .menu-item:nth-child(2) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+.nav-container .showMenu .menu-item:nth-child(3) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
 .nav-container .hideMenu {
   top: -100vh;
   opacity: 0;
@@ -103,21 +119,6 @@
 .nav-container .hideMenu .menu-item {
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
-}
-
-.nav-container .menu-item:nth-child(1) {
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
-}
-
-.nav-container .menu-item:nth-child(2) {
-  -webkit-transition-delay: 1.1s;
-          transition-delay: 1.1s;
-}
-
-.nav-container .menu-item:nth-child(3) {
-  -webkit-transition-delay: 1.4s;
-          transition-delay: 1.4s;
 }
 
 .hero-section {
@@ -177,6 +178,11 @@
   font-size: 1.5rem;
   text-transform: capitalize;
   position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-right: 0.125em;
+  margin: 0 auto;
 }
 
 .hero-section .hero-container .hero-text-container .big-text::before, .hero-section .hero-container .hero-text-container .big-text::after {
@@ -190,44 +196,44 @@
 
 .hero-section .hero-container .hero-text-container #learn::before {
   background: #000;
-  -webkit-animation: typewriter 6s steps(19) 0.5s forwards;
-          animation: typewriter 6s steps(19) 0.5s forwards;
+  -webkit-animation: typewriter 6s steps(17) 0.5s forwards;
+          animation: typewriter 6s steps(17) 0.5s forwards;
 }
 
 .hero-section .hero-container .hero-text-container #learn::after {
-  width: 0.14em;
+  width: 0.15em;
   background: #fff;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
-          animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
+  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
+          animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
 }
 
 .hero-section .hero-container .hero-text-container #code::before {
   background: #000;
-  -webkit-animation: typewriter 6s steps(18) 0.5s forwards;
-          animation: typewriter 6s steps(18) 0.5s forwards;
+  -webkit-animation: typewriter 6s steps(16) 0.5s forwards;
+          animation: typewriter 6s steps(16) 0.5s forwards;
 }
 
 .hero-section .hero-container .hero-text-container #code::after {
-  width: 0.14em;
+  width: 0.15em;
   background: #cccccc;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(18) 0.5s forwards, blink calc(6s / 6) steps(18) infinite;
-          animation: typewriter 6s steps(18) 0.5s forwards, blink calc(6s / 6) steps(18) infinite;
+  -webkit-animation: typewriter 6s steps(16) 0.5s forwards, blink calc(6s / 6) steps(16) infinite;
+          animation: typewriter 6s steps(16) 0.5s forwards, blink calc(6s / 6) steps(16) infinite;
 }
 
 .hero-section .hero-container .hero-text-container #build::before {
   background: #000;
-  -webkit-animation: typewriter 6s steps(19) 0.5s forwards;
-          animation: typewriter 6s steps(19) 0.5s forwards;
+  -webkit-animation: typewriter 6s steps(17) 0.5s forwards;
+          animation: typewriter 6s steps(17) 0.5s forwards;
 }
 
 .hero-section .hero-container .hero-text-container #build::after {
-  width: 0.14em;
+  width: 0.15em;
   background: #999999;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
-          animation: typewriter 6s steps(19) 0.5s forwards, blink calc(6s / 6) steps(19) infinite;
+  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
+          animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
 }
 
 @-webkit-keyframes typewriter {
