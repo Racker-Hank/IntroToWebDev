@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SectionBreakText from '../section-break-text';
-import BasicLanguage from './basic-language';
+import BasicLanguages from './basic-language';
 
 const Tech = () => {
 	return (
@@ -11,7 +11,7 @@ const Tech = () => {
 				subtitles={['Take your first', 'with']}
 				redText='steps'
 			/>
-			<BasicLanguage />
+			<BasicLanguages />
 		</main>
 	);
 };
