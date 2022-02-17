@@ -1,0 +1,21 @@
+.section-break-text {
+	// height: 100vh;
+	// padding: 5rem 0;
+	margin: 5rem 0;
+	text-align: center;
+
+	.title {
+		font-size: 1.75rem;
+		font-weight: bold;
+		text-transform: capitalize;
+		margin-bottom: 1.5rem;
+	}
+
+	.subtitle {
+		font-size: 1rem;
+
+		.red-text {
+			color: $color-primary;
+		}
+	}
+}

@@ -21,11 +21,15 @@ const Hero = () => {
 					</h1>
 				</div>
 			</div>
-			<button className='btn'>
-				<a href='#hero'>
-					<i class='fa fa-solid fa-chevron-down'></i>
-				</a>
-			</button>
+			<a
+				className='btn'
+				href='#tech'
+				onClick={() => {
+					return false;
+				}}
+			>
+				<i className='fa fa-solid fa-chevron-down'></i>
+			</a>
 		</section>
 	);
 };

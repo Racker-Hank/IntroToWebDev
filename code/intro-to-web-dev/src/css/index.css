@@ -7,6 +7,15 @@ body {
 	color: #fff;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	color: #fff;
+	background: #ff3434;
+}
+
 li {
 	list-style-type: none;
 }

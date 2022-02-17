@@ -1,19 +1,23 @@
 .nav-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 .nav-container nav {
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 100;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-container nav #mind {
@@ -26,7 +30,6 @@
 }
 
 .nav-container nav .btn {
-  margin-left: auto;
   background: transparent;
   border: none;
   display: -ms-grid;
@@ -39,20 +42,18 @@
 }
 
 .nav-container .menu-items-container {
-  position: absolute;
-  top: 5rem;
+  position: fixed;
   left: 0;
   right: 0;
+  top: 5rem;
   height: calc(100vh - 5rem);
   text-align: center;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: red;
   background: #000;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 80;
 }
 
 .nav-container .menu-items-container .menu-items {
@@ -148,6 +149,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3rem;
+  overflow: hidden;
 }
 
 .hero-section .hero-container .hero-text-container .small-text {
@@ -155,6 +157,34 @@
   text-transform: capitalize;
   color: #999999;
   position: relative;
+  -webkit-animation: slide-right 1s ease forwards;
+          animation: slide-right 1s ease forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .hero-section .hero-container .hero-text-container .small-text #first-website {
@@ -170,6 +200,39 @@
   position: absolute;
   right: 0;
   bottom: -0.65em;
+  -webkit-animation: slide-up 1s ease forwards;
+          animation: slide-up 1s ease forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  opacity: 0;
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .hero-section .hero-container .hero-text-container .big-text {
@@ -290,5 +353,25 @@
 
 .hero-section .btn a .fa-chevron-down {
   font-size: 1.5rem;
+}
+
+.section-break-text {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.section-break-text .title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.section-break-text .subtitle {
+  font-size: 1rem;
+}
+
+.section-break-text .subtitle .red-text {
+  color: #ff3434;
 }
 /*# sourceMappingURL=main.css.map */

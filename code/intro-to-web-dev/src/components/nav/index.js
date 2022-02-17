@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Nav = () => {
 	const [isShowMenu, setIsShowMenu] = useState(false);
 	return (
-		<div className='nav-container'>
+		<div className='nav-container' id='nav'>
 			<nav>
 				<a href='https://mindx.edu.vn/' target='blank'>
 					<div className='logo'>
@@ -24,12 +24,12 @@ const Nav = () => {
 			>
 				<ul className='menu-items'>
 					<li className='menu-item'>
-						<a className='menu-item-link active' href='/'>
+						<a className='menu-item-link active' href='#hero'>
 							Home
 						</a>
 					</li>
 					<li className='menu-item'>
-						<a className='menu-item-link' href='/'>
+						<a className='menu-item-link' href='#tech'>
 							Tech
 						</a>
 					</li>

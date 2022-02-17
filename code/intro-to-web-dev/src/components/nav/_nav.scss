@@ -1,14 +1,16 @@
 .nav-container {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1000;
 
 	nav {
-		margin: 1rem 2rem;
+		padding: 1rem 2rem;
+		background: $color-black;
 		display: flex;
 		align-items: center;
-		z-index: 100;
+		justify-content: space-between;
 
 		#mind {
 			font-size: 2.25rem;
@@ -20,7 +22,6 @@
 		}
 
 		.btn {
-			margin-left: auto;
 			background: transparent;
 			border: none;
 			display: grid;
@@ -33,21 +34,16 @@
 	}
 
 	.menu-items-container {
-		position: absolute;
-		top: 5rem;
+		position: fixed;
 		left: 0;
 		right: 0;
+		top: 5rem;
 		height: calc(100vh - 5rem);
 		text-align: center;
-		// display: flex;
-		// align-items: center;
-		// justify-content: center;
 		display: grid;
 		place-items: center;
-		background: red;
 		background: $color-black;
 		transition: all 0.5s ease;
-		z-index: 80;
 
 		.menu-items {
 			display: flex;
