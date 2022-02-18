@@ -1,7 +1,10 @@
 // configs
 @import './color';
+@import './config';
 
 // styles
+@import '../components/buttons/cta-button/ctabutton';
+@import '../components/buttons/stt-button/sttbutton';
 @import '../components/nav/nav';
 @import '../components/hero/hero';
 @import '../components/section-break-text/sectionbreaktext';

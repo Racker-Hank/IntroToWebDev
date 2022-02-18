@@ -24,17 +24,29 @@ const Nav = () => {
 			>
 				<ul className='menu-items'>
 					<li className='menu-item'>
-						<a className='menu-item-link active' href='#hero'>
+						<a
+							className='menu-item-link active'
+							href='#top'
+							onClick={() => setIsShowMenu(false)}
+						>
 							Home
 						</a>
 					</li>
 					<li className='menu-item'>
-						<a className='menu-item-link' href='#tech'>
+						<a
+							className='menu-item-link'
+							href='#tech'
+							onClick={() => setIsShowMenu(false)}
+						>
 							Tech
 						</a>
 					</li>
 					<li className='menu-item'>
-						<a className='menu-item-link' href='/'>
+						<a
+							className='menu-item-link'
+							href='/'
+							onClick={() => setIsShowMenu(false)}
+						>
 							Channels
 						</a>
 					</li>

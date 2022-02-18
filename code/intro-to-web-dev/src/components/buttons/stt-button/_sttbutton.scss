@@ -1,0 +1,35 @@
+.stt-btn {
+	position: fixed;
+	right: 2rem;
+	bottom: -2rem;
+	background: $color-dark-grey;
+	height: 2rem;
+	width: 2rem;
+	border: 1px solid $color-light-grey;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	transition: all 0.3s ease;
+	z-index: 900;
+
+	&:hover {
+		background: $color-primary;
+
+		.fa-chevron-up {
+			color: $color-white;
+		}
+	}
+
+	.fa-chevron-up {
+		font-size: 1.25rem;
+		color: $color-light-grey;
+	}
+}
+
+.showSTTBtn {
+	bottom: 1.5rem;
+}
+
+.hideSTTBtn {
+	bottom: -2rem;
+}

@@ -1,11 +1,13 @@
 import React from 'react';
 
+import CTAButton from '../../buttons/cta-button';
+
 const data = [
 	{
 		id: 1,
 		name: 'HTML',
 		description: 'The backbone of the website, decide what the user will see',
-		img: '../../../../res/tech/basic-language/html.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-language/html.png',
 		dropShadowColor: '#C52E06',
 	},
 	{
@@ -13,14 +15,14 @@ const data = [
 		name: 'CSS',
 		description:
 			'The clothes of the website, decide how one should look with your endless creativity',
-		img: '../../../../res/tech/basic-language/css.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-language/css.png',
 		dropShadowColor: '#048FCB',
 	},
 	{
 		id: 3,
 		name: 'JavaScript',
 		description: 'The brain of the website, endless support and frameworks',
-		img: '../../../../res/tech/basic-language/js.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-language/js.png',
 		dropShadowColor: '#E1C107',
 	},
 ];
@@ -33,6 +35,14 @@ const BasicLanguages = () => {
 					return <Language key={language.id} {...language} />;
 				})}
 			</div>
+			<CTAButton text='Find a channel' anchor='top' />
+			{/* {
+				(window.onscroll = () => {
+					console.log(window.innerHeight);
+					console.log(window.scrollY);
+					console.log(window.scrollY - window.innerHeight / 2);
+				})
+			} */}
 		</section>
 	);
 };
@@ -41,9 +51,9 @@ const Language = (props) => {
 	const { name, description, img, dropShadowColor } = props;
 	return (
 		<article
+			id={name}
 			className='language-container'
 			style={{
-				padding: '1rem',
 				boxShadow: '0 5px 20px 2px ' + dropShadowColor,
 			}}
 		>
