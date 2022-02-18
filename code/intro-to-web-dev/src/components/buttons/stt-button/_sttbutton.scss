@@ -5,14 +5,15 @@
 	background: $color-dark-grey;
 	height: 2rem;
 	width: 2rem;
-	border: 1px solid $color-light-grey;
+	border: 2px solid $color-light-grey;
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
 	transition: all 0.3s ease;
 	z-index: 900;
 
-	&:hover {
+	&:hover,
+	&:focus-visible {
 		background: $color-primary;
 
 		.fa-chevron-up {

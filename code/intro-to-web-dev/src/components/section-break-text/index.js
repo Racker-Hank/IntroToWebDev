@@ -1,10 +1,10 @@
 import React from 'react';
 
 const SectionBreakText = (props) => {
-	const { title, subtitles, redText } = props;
+	const { section, title, subtitles, redText } = props;
 
 	return (
-		<div className='section-break-text' id='tech'>
+		<div className='section-break-text' id={section}>
 			<h1 className='title'>{title}</h1>
 			<h2 className='subtitle'>
 				{subtitles[0] + ' '}

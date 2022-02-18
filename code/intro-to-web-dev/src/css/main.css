@@ -2,7 +2,7 @@
   text-decoration: none;
   font-size: 0.65rem;
   color: #fff;
-  padding: 0.3em 1.25em;
+  padding: 0.4em 1.25em 0.3em;
   background-color: #ff3434;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 3.125em 0.3em rgba(255, 52, 52, 0.7);
@@ -16,7 +16,7 @@
   background: #333333;
   height: 2rem;
   width: 2rem;
-  border: 1px solid #999999;
+  border: 2px solid #999999;
   border-radius: 50%;
   display: -ms-grid;
   display: grid;
@@ -26,11 +26,11 @@
   z-index: 900;
 }
 
-.stt-btn:hover {
+.stt-btn:hover, .stt-btn:focus-visible {
   background: #ff3434;
 }
 
-.stt-btn:hover .fa-chevron-up {
+.stt-btn:hover .fa-chevron-up, .stt-btn:focus-visible .fa-chevron-up {
   color: #fff;
 }
 
@@ -84,6 +84,7 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
 .nav-container nav .btn .fa-bars {
@@ -210,14 +211,14 @@
           animation: slide-right 1s ease forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
 }
 
 @-webkit-keyframes slide-right {
   from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
   }
   to {
     -webkit-transform: translateX(0);
@@ -227,8 +228,8 @@
 
 @keyframes slide-right {
   from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
   }
   to {
     -webkit-transform: translateX(0);
@@ -293,8 +294,8 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-right: 0.125em;
   margin: 0 auto;
+  letter-spacing: 1px;
 }
 
 .hero-section .hero-container .hero-text-container .big-text::before, .hero-section .hero-container .hero-text-container .big-text::after {
@@ -436,7 +437,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .basic-languages .languages-container {

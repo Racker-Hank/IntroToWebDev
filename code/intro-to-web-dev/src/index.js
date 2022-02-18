@@ -13,7 +13,9 @@ ReactDOM.render(
 		<Nav />
 		<Hero />
 		<STTButton />
-		<Tech />
+		<main>
+			<Tech />
+		</main>
 	</React.StrictMode>,
 	document.getElementById('root')
 );

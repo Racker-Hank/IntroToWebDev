@@ -21,11 +21,11 @@
 				position: relative;
 				animation: slide-right 1s ease forwards;
 				animation-delay: 0.5s;
-				transform: translateX(-100%);
+				transform: translateX(-110%);
 
 				@keyframes slide-right {
 					from {
-						transform: translateX(-100%);
+						transform: translateX(-110%);
 					}
 					to {
 						transform: translateX(0);
@@ -70,8 +70,9 @@
 				text-transform: capitalize;
 				position: relative;
 				width: max-content;
-				padding-right: 0.125em;
+				// padding-right: 0.125em;
 				margin: 0 auto;
+				letter-spacing: 1px;
 
 				&::before,
 				&::after {

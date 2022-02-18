@@ -7,7 +7,7 @@ const data = [
 		id: 1,
 		name: 'HTML',
 		description: 'The backbone of the website, decide what the user will see',
-		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-language/html.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-languages/html.png',
 		dropShadowColor: '#C52E06',
 	},
 	{
@@ -15,14 +15,14 @@ const data = [
 		name: 'CSS',
 		description:
 			'The clothes of the website, decide how one should look with your endless creativity',
-		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-language/css.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-languages/css.png',
 		dropShadowColor: '#048FCB',
 	},
 	{
 		id: 3,
 		name: 'JavaScript',
 		description: 'The brain of the website, endless support and frameworks',
-		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-language/js.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-languages/js.png',
 		dropShadowColor: '#E1C107',
 	},
 ];
@@ -35,7 +35,7 @@ const BasicLanguages = () => {
 					return <Language key={language.id} {...language} />;
 				})}
 			</div>
-			<CTAButton text='Find a channel' anchor='top' />
+			<CTAButton text='Find a channel' anchor='#top' color='#ff3434' />
 			{/* {
 				(window.onscroll = () => {
 					console.log(window.innerHeight);

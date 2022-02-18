@@ -1,18 +1,20 @@
 import React from 'react';
 
 import SectionBreakText from '../section-break-text';
-import BasicLanguages from './basic-language';
+import BasicLanguages from './basic-languages';
+import BasicTools from './basic-tools';
 
 const Tech = () => {
 	return (
-		<main>
+		<section id='tech'>
 			<SectionBreakText
 				title='languages to learn'
 				subtitles={['Take your first', 'with']}
 				redText='steps'
 			/>
 			<BasicLanguages />
-		</main>
+			<BasicTools />
+		</section>
 	);
 };
 
