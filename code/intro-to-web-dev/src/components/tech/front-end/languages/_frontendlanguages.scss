@@ -6,13 +6,11 @@
 	background: #333;
 	border-radius: $border-radius;
 	margin: 1rem;
+	padding: 1rem;
 	box-shadow: 0px 0px 0px 10px #222222;
 }
 
-.section-with-background-name {
-	color: $color-green;
-}
-
+// both css and js
 .front-end-language-container {
 	.title {
 		text-transform: capitalize;
@@ -30,5 +28,16 @@
 			border-radius: 5px;
 			font-size: 1rem;
 		}
+	}
+
+	$gap: 2rem;
+	.languages-container {
+		border-radius: $border-radius;
+		border: 1px solid $color-white;
+		display: flex;
+		flex-direction: column;
+		gap: $gap;
+		padding: 1rem 0;
+		margin-bottom: 2rem;
 	}
 }

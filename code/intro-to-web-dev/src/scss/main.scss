@@ -13,3 +13,11 @@ html {
 	scroll-snap-type: y proximity;
 	overflow-y: scroll;
 }
+
+.section-with-background-name {
+	color: $color-green;
+}
+
+.section-without-background-name {
+	color: $color-secondary;
+}

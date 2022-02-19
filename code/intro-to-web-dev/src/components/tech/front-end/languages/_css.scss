@@ -1,10 +1,49 @@
 .css-container {
 	.text-container {
-		margin: 1rem 1rem 2rem;
+		margin: 1rem 0 2rem;
 
 		.subtitle {
 			#css {
-				background-color: $color-secondary;
+				background-color: #048fca;
+			}
+		}
+	}
+
+	$gap: 2rem;
+	.languages-container {
+		@for $i from 1 to 2 {
+			div:nth-of-type(#{$i}) {
+				position: relative;
+			}
+
+			div:nth-of-type(#{$i}):after {
+				content: '';
+				position: absolute;
+				bottom: -$gap / 2;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background: $color-white;
+			}
+		}
+
+		.img-container {
+			display: grid;
+			place-items: center;
+
+			.svg {
+				height: 100px;
+			}
+		}
+
+		.logo-container {
+			display: grid;
+			place-items: center;
+			gap: 1rem;
+			grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+			.logo {
+				height: 75px;
 			}
 		}
 	}
