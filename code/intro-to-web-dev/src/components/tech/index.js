@@ -6,7 +6,7 @@ import BasicTools from './basic-tools';
 
 const Tech = () => {
 	return (
-		<section id='tech'>
+		<section id='tech' style={{ paddingTop: '5rem' }}>
 			<SectionBreakText
 				title='languages to learn'
 				subtitles={['Take your first', 'with']}

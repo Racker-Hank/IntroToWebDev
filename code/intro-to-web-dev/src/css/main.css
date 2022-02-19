@@ -406,7 +406,6 @@
 }
 
 .section-break-text {
-  margin: 5rem 2rem 0;
   text-align: center;
 }
 
@@ -426,7 +425,7 @@
 }
 
 .basic-languages {
-  margin: 3rem 2rem;
+  margin: 3rem 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,9 +443,9 @@
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  gap: 1.5em;
-  -ms-grid-columns: (minmax(140px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2em;
+  -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .basic-languages .languages-container .language-container {
@@ -465,6 +464,7 @@
           align-items: center;
   border: 5px solid transparent;
   border-radius: 15px;
+  min-width: 130px;
 }
 
 .basic-languages .languages-container .language-container:hover {
@@ -506,6 +506,111 @@
 
 .basic-languages .languages-container #JavaScript {
   grid-column: span 2;
-  width: calc(50% - 0.75em);
+  width: calc(50% - 1em);
+}
+
+.basic-tools {
+  margin: 3rem 2rem 0;
+}
+
+.basic-tools .tools-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.basic-tools .tools-container .section-name {
+  color: #5378ff;
+  margin-bottom: 2rem;
+}
+
+.basic-tools .tools-container .logos-container {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.basic-tools .tools-container .logos-container .logo {
+  cursor: pointer;
+  height: 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.basic-tools .tools-container .logos-container #VS Code .current {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.basic-tools .tools-container .logos-container .left,
+.basic-tools .tools-container .logos-container .right {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.basic-tools .tools-container .description-container {
+  margin: 2rem 0 1.5rem;
+  width: 40ch;
+  height: 6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.basic-tools .tools-container .description-container .description {
+  width: 40ch;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 0.75rem;
+  color: #bfbfbf;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.basic-tools .tools-container .description-container .current {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.basic-tools .tools-container .description-container .left {
+  left: -100%;
+}
+
+.basic-tools .tools-container .description-container .right {
+  left: 100%;
+}
+
+.basic-tools .tools-container .cta-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-name {
+  font-size: 1.5rem;
+}
+
+.many-more {
+  font-size: 1rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

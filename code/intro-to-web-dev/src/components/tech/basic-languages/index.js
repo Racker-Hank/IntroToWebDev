@@ -4,14 +4,15 @@ import CTAButton from '../../buttons/cta-button';
 
 const data = [
 	{
-		id: 1,
+		id: 0,
 		name: 'HTML',
-		description: 'The backbone of the website, decide what the user will see',
+		description:
+			'The backbone of the website, decide what the users will see',
 		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-languages/html.png',
 		dropShadowColor: '#C52E06',
 	},
 	{
-		id: 2,
+		id: 1,
 		name: 'CSS',
 		description:
 			'The clothes of the website, decide how one should look with your endless creativity',
@@ -19,7 +20,7 @@ const data = [
 		dropShadowColor: '#048FCB',
 	},
 	{
-		id: 3,
+		id: 2,
 		name: 'JavaScript',
 		description: 'The brain of the website, endless support and frameworks',
 		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-languages/js.png',
@@ -27,9 +28,9 @@ const data = [
 	},
 ];
 
-const BasicLanguages = () => {
+const BasicLanguages = React.memo(() => {
 	return (
-		<section className='basic-languages'>
+		<section className='basic-languages' id='basic-languages'>
 			<div className='languages-container'>
 				{data.map((language) => {
 					return <Language key={language.id} {...language} />;
@@ -45,7 +46,7 @@ const BasicLanguages = () => {
 			} */}
 		</section>
 	);
-};
+});
 
 const Language = (props) => {
 	const { name, description, img, dropShadowColor } = props;
