@@ -622,8 +622,8 @@
   font-weight: bold;
 }
 
-.css-container .text-container {
-  margin: 1rem 0 2rem;
+.css-container {
+  margin-bottom: 2rem;
 }
 
 .css-container .text-container .subtitle #css {
@@ -664,8 +664,57 @@
       grid-template: repeat(2, 1fr)/repeat(2, 1fr);
 }
 
-.css-container .languages-container .logo-container .logo {
+.css-container .languages-container .logo-container .language-link {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.css-container .languages-container .logo-container .language-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.css-container .languages-container .logo-container .language-link .logo {
   height: 75px;
+}
+
+.js-container text-container .subtitle #js {
+  background-color: #e1c107;
+}
+
+.js-container .languages-container div:nth-of-type(1) {
+  position: relative;
+}
+
+.js-container .languages-container div:nth-of-type(1):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.js-container .languages-container div:nth-of-type(2) {
+  position: relative;
+}
+
+.js-container .languages-container div:nth-of-type(2):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.js-container .languages-container .language-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
 }
 
 .front-end-languages {
@@ -673,21 +722,29 @@
   background: #333;
   border-radius: 15px;
   margin: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
   -webkit-box-shadow: 0px 0px 0px 10px #222222;
           box-shadow: 0px 0px 0px 10px #222222;
 }
 
-.front-end-language-container .title {
+.front-end-languages .many-more {
+  margin-top: 1rem;
+}
+
+.front-end-language-container .text-container {
+  margin: 1rem 0 2rem;
+}
+
+.front-end-language-container .text-container .title {
   text-transform: capitalize;
   font-size: 1.5rem;
 }
 
-.front-end-language-container .subtitle {
+.front-end-language-container .text-container .subtitle {
   font-size: 0.75rem;
 }
 
-.front-end-language-container .subtitle .language-name {
+.front-end-language-container .text-container .subtitle .language-name {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   color: #fff;
@@ -708,7 +765,7 @@
           flex-direction: column;
   gap: 2rem;
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  margin: 0 1rem 1rem;
 }
 
 #tech .section-break-text:nth-of-type(2) {

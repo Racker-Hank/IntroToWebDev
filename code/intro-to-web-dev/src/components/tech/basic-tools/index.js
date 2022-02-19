@@ -51,6 +51,7 @@ const BasicTools = () => {
 					{data.map((tool) => {
 						return (
 							<img
+								key={tool.id}
 								className={`logo ${
 									tool.id > index
 										? 'right'
@@ -71,6 +72,7 @@ const BasicTools = () => {
 					{data.map((tool) => {
 						return (
 							<p
+								key={tool.id}
 								className={`description ${
 									tool.id > index
 										? 'right'
@@ -98,7 +100,7 @@ const BasicTools = () => {
 						color='#5378FF'
 					/>
 				</div>
-				section-with-background-name{' '}
+				<p className='many-more'>and many many more..</p>
 			</div>
 		</section>
 	);

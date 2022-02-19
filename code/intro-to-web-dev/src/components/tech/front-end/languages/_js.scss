@@ -1,0 +1,33 @@
+.js-container {
+	text-container {
+		.subtitle {
+			#js {
+				background-color: #e1c107;
+			}
+		}
+	}
+
+	$gap: 2rem;
+	.languages-container {
+		@for $i from 1 to 3 {
+			div:nth-of-type(#{$i}) {
+				position: relative;
+			}
+
+			div:nth-of-type(#{$i}):after {
+				content: '';
+				position: absolute;
+				bottom: -$gap / 2;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background: $color-white;
+			}
+		}
+
+		.language-name-container {
+			display: flex;
+			place-items: center;
+		}
+	}
+}

@@ -1,7 +1,7 @@
 .css-container {
-	.text-container {
-		margin: 1rem 0 2rem;
+	margin-bottom: 2rem;
 
+	.text-container {
 		.subtitle {
 			#css {
 				background-color: #048fca;
@@ -42,8 +42,16 @@
 			gap: 1rem;
 			grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 
-			.logo {
-				height: 75px;
+			.language-link {
+				transition: all 0.3s ease;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				.logo {
+					height: 75px;
+				}
 			}
 		}
 	}

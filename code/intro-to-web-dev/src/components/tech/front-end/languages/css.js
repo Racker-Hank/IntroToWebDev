@@ -6,22 +6,26 @@ const data = [
 	{
 		id: 0,
 		name: 'sass',
-		url: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/sass.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/sass.png',
+		url: 'https://sass-lang.com/documentation',
 	},
 	{
 		id: 1,
 		name: 'postcss',
-		url: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/postcss.svg',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/postcss.svg',
+		url: 'https://postcss.org/',
 	},
 	{
 		id: 2,
 		name: 'bootstrap',
-		url: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/bootstrap.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/bootstrap.png',
+		url: 'https://getbootstrap.com/',
 	},
 	{
 		id: 3,
 		name: 'tailwind',
-		url: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/tailwind.png',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/tailwind.png',
+		url: 'https://tailwindcss.com/',
 	},
 ];
 
@@ -41,7 +45,7 @@ const CSS = () => {
 			<div className='languages-container'>
 				<div className='img-container'>
 					<img
-						src='https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/undraw_static_website.svg'
+						src='https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/css/undraw_static_website.svg'
 						alt='static-website'
 						className='svg'
 					/>
@@ -49,12 +53,19 @@ const CSS = () => {
 				<div className='logo-container'>
 					{data.map((language) => {
 						return (
-							<img
-								className='logo'
-								id={language.name}
-								src={language.url}
-								alt={language.name}
-							/>
+							<a
+								key={language.id}
+								href={language.url}
+								target='blank'
+								className='language-link'
+							>
+								<img
+									className='logo'
+									id={language.name}
+									src={language.img}
+									alt={language.name}
+								/>
+							</a>
 						);
 					})}
 				</div>
