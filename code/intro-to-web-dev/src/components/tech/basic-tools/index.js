@@ -44,7 +44,9 @@ const BasicTools = () => {
 	return (
 		<section className='basic-tools' id='basic-tools'>
 			<div className='tools-container'>
-				<h2 className='section-name'>Basic Tools</h2>
+				<h2 className='section-name section-without-background-name'>
+					Basic Tools
+				</h2>
 				<div className='logos-container'>
 					{data.map((tool) => {
 						return (
@@ -84,7 +86,7 @@ const BasicTools = () => {
 				</div>
 				<div className='cta-btn-container'>
 					<CTAButton
-						text='Find a channel'
+						text='Find a tutorial'
 						anchor={data[index].urls[0]}
 						target='_blank'
 						color='#ff3434'
@@ -96,7 +98,7 @@ const BasicTools = () => {
 						color='#5378FF'
 					/>
 				</div>
-				<p className='many-more'>and many many more..</p>
+				section-with-background-name{' '}
 			</div>
 		</section>
 	);

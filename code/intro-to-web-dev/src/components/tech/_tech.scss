@@ -1,0 +1,26 @@
+@import '../section-break-text/sectionbreaktext';
+@import './basic-languages/basiclanguages';
+@import './basic-tools/basictools';
+@import './front-end/languages/frontendlanguages';
+
+#tech {
+	.section-break-text:nth-of-type(2) {
+		height: 100vh !important;
+		padding: 5rem 0;
+		display: grid;
+		place-items: center;
+		cursor: default;
+
+		// scroll-snap-align: start;
+		scroll-snap-stop: always;
+
+		.subtitle,
+		.red-text {
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: $color-secondary;
+			}
+		}
+	}
+}
