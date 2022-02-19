@@ -1,20 +1,16 @@
 .js-container {
-	text-container {
-		.subtitle {
-			#js {
-				background-color: #e1c107;
-			}
-		}
+	#js {
+		background-color: #e1c107;
 	}
 
 	$gap: 2rem;
 	.languages-container {
 		@for $i from 1 to 3 {
-			div:nth-of-type(#{$i}) {
+			.language-container:nth-of-type(#{$i}) {
 				position: relative;
 			}
 
-			div:nth-of-type(#{$i}):after {
+			.language-container:nth-of-type(#{$i}):after {
 				content: '';
 				position: absolute;
 				bottom: -$gap / 2;
@@ -28,6 +24,48 @@
 		.language-name-container {
 			display: flex;
 			place-items: center;
+			justify-content: center;
+			margin-bottom: 1rem;
+
+			.language-logo {
+				margin-right: 0.5rem;
+			}
+
+			#react-logo,
+			#vue-logo {
+				height: 40px;
+			}
+
+			#svelte-logo {
+				height: 50px;
+			}
+
+			.language-name {
+				text-transform: capitalize;
+				font-size: 2rem;
+				font-family: 'Fira Code';
+			}
+		}
+
+		.description {
+			font-size: 1rem;
+			color: #aaa;
+			width: 32ch;
+			margin: 0 auto 1rem;
+		}
+
+		.frameworks-container {
+			display: flex;
+			flex-direction: column;
+			place-items: center;
+			justify-content: center;
+			gap: 1rem;
+
+			.framework-link {
+				#remix {
+					height: 60px;
+				}
+			}
 		}
 	}
 }

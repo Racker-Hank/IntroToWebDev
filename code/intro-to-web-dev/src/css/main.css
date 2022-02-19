@@ -2,7 +2,7 @@
   text-decoration: none;
   font-size: 0.65rem;
   color: #fff;
-  padding: 0.4em 1.25em 0.3em;
+  padding: 0.3rem 1.25em;
   background-color: #cd0000;
   border-radius: 15px;
   -webkit-transition: all 0.3s ease;
@@ -10,7 +10,7 @@
 }
 
 .cta-btn:hover, .cta-btn:focus-visible {
-  padding: 0.4em 3em 0.3em;
+  padding: 0.3rem 3em;
 }
 
 .stt-btn {
@@ -623,10 +623,10 @@
 }
 
 .css-container {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-.css-container .text-container .subtitle #css {
+.css-container #css {
   background-color: #048fca;
 }
 
@@ -678,15 +678,15 @@
   height: 75px;
 }
 
-.js-container text-container .subtitle #js {
+.js-container #js {
   background-color: #e1c107;
 }
 
-.js-container .languages-container div:nth-of-type(1) {
+.js-container .languages-container .language-container:nth-of-type(1) {
   position: relative;
 }
 
-.js-container .languages-container div:nth-of-type(1):after {
+.js-container .languages-container .language-container:nth-of-type(1):after {
   content: '';
   position: absolute;
   bottom: -1rem;
@@ -696,11 +696,11 @@
   background: #fff;
 }
 
-.js-container .languages-container div:nth-of-type(2) {
+.js-container .languages-container .language-container:nth-of-type(2) {
   position: relative;
 }
 
-.js-container .languages-container div:nth-of-type(2):after {
+.js-container .languages-container .language-container:nth-of-type(2):after {
   content: '';
   position: absolute;
   bottom: -1rem;
@@ -715,6 +715,55 @@
   display: -ms-flexbox;
   display: flex;
   place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.js-container .languages-container .language-name-container .language-logo {
+  margin-right: 0.5rem;
+}
+
+.js-container .languages-container .language-name-container #react-logo,
+.js-container .languages-container .language-name-container #vue-logo {
+  height: 40px;
+}
+
+.js-container .languages-container .language-name-container #svelte-logo {
+  height: 50px;
+}
+
+.js-container .languages-container .language-name-container .language-name {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: 'Fira Code';
+}
+
+.js-container .languages-container .description {
+  font-size: 1rem;
+  color: #aaa;
+  width: 32ch;
+  margin: 0 auto 1rem;
+}
+
+.js-container .languages-container .frameworks-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.js-container .languages-container .frameworks-container .framework-link #remix {
+  height: 60px;
 }
 
 .front-end-languages {
@@ -732,7 +781,7 @@
 }
 
 .front-end-language-container .text-container {
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
 }
 
 .front-end-language-container .text-container .title {
@@ -766,6 +815,16 @@
   gap: 2rem;
   padding: 1rem 0;
   margin: 0 1rem 1rem;
+}
+
+.front-end-language-container .languages-container .language-link {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.front-end-language-container .languages-container .language-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #tech .section-break-text:nth-of-type(2) {

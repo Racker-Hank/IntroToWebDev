@@ -5,7 +5,7 @@ import JS from './js';
 
 const FrontEndLanguages = () => {
 	return (
-		<div className='front-end-languages'>
+		<div className='front-end-languages' id='front-end-languages'>
 			<h2 className='section-name section-with-background-name'>
 				Front End
 			</h2>

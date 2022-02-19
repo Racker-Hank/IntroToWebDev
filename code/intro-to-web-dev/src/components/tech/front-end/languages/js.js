@@ -82,19 +82,23 @@ const JS = () => {
 				{data.map((language) => {
 					return (
 						<div className='language-container' key={language.id}>
-							<a href={language.url} className='language-name-container'>
+							<a
+								href={language.url}
+								target='blank'
+								className='language-name-container language-link'
+							>
 								<img
 									src={language.img}
 									alt={language.name}
 									className='language-logo'
 									id={language.name + '-logo'}
 								/>
-								<p
+								<code
 									className='language-name'
 									id={language.name + '-name'}
 								>
 									{language.name}
-								</p>
+								</code>
 							</a>
 							<p className='description'>{language.description}</p>
 							<div className='frameworks-container'>
@@ -104,6 +108,7 @@ const JS = () => {
 											key={framework.id}
 											href={framework.url}
 											target='blank'
+											className='framework-link language-link'
 										>
 											<img
 												className='framework-logo'
