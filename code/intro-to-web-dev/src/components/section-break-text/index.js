@@ -8,9 +8,11 @@ const SectionBreakText = (props) => {
 			{title && <h1 className='title'>{title}</h1>}
 			<h2 className='subtitle'>
 				{subtitles[0] + ' '}
-				<span className='red-text' id='steps'>
-					{redText}
-				</span>{' '}
+				{redText && (
+					<span className='red-text' id='steps'>
+						{redText}
+					</span>
+				)}
 				{subtitles[1]}
 			</h2>
 		</div>

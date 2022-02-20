@@ -67,7 +67,7 @@ const data = [
 
 const JS = () => {
 	return (
-		<div className='js-container front-end-language-container'>
+		<div className='js-container front-end-languages-container'>
 			<div className='text-container'>
 				<h3 className='title'>level up your JS game</h3>
 				<p className='subtitle'>

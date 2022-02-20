@@ -13,7 +13,7 @@ const Hero = React.memo(() => {
 					<h1 className='big-text' id='learn'>
 						learn it yourself
 					</h1>
-					<h1 className='big-text' id='code'>
+					<h1 className='big-text' id='code' contentEditable='true'>
 						code it yourself
 					</h1>
 					<h1 className='big-text' id='build'>

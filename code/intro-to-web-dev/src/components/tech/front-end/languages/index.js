@@ -3,7 +3,7 @@ import React from 'react';
 import CSS from './css';
 import JS from './js';
 
-const FrontEndLanguages = () => {
+const FrontEndLanguages = React.memo(() => {
 	return (
 		<div
 			className='front-end-languages section-with-background'
@@ -17,6 +17,6 @@ const FrontEndLanguages = () => {
 			<p className='many-more'>and many many more..</p>
 		</div>
 	);
-};
+});
 
 export default FrontEndLanguages;

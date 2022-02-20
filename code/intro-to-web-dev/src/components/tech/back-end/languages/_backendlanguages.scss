@@ -1,0 +1,11 @@
+@import './backend';
+@import './database';
+
+.back-end-languages {
+	@extend .front-end-languages;
+}
+
+// both backend and database
+.back-end-languages-container {
+	@extend .front-end-languages-container;
+}

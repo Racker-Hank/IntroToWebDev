@@ -31,7 +31,7 @@ const data = [
 
 const CSS = () => {
 	return (
-		<div className='css-container front-end-language-container'>
+		<div className='css-container front-end-languages-container'>
 			<div className='text-container'>
 				<h3 className='title'>level up your CSS game</h3>
 				<p className='subtitle'>

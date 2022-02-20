@@ -16,7 +16,7 @@ html {
 
 .section-with-background {
 	text-align: center;
-	background: #333;
+	background: #333333;
 	border-radius: $border-radius;
 	margin: 1rem;
 	padding: 1rem 0;
@@ -26,10 +26,19 @@ html {
 		color: $color-green;
 	}
 }
+
 .section-without-background {
 	text-align: center;
 
 	.section-without-background-name {
 		color: $color-secondary;
 	}
+}
+
+.red-text {
+	color: $color-primary;
+}
+
+.blue-text {
+	color: $color-secondary;
 }

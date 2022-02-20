@@ -217,6 +217,7 @@
           animation-delay: 0.5s;
   -webkit-transform: translateX(-110%);
           transform: translateX(-110%);
+  margin: 0 auto;
 }
 
 @-webkit-keyframes slide-right {
@@ -325,6 +326,10 @@
           animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
 }
 
+.hero-section .hero-container .hero-text-container #code {
+  cursor: not-allowed;
+}
+
 .hero-section .hero-container .hero-text-container #code::before {
   background: #000;
   -webkit-animation: typewriter 6s steps(16) 0.5s forwards;
@@ -422,10 +427,6 @@
 
 .section-break-text .subtitle {
   font-size: 1rem;
-}
-
-.red-text {
-  color: #ff3434;
 }
 
 .basic-languages {
@@ -765,24 +766,24 @@
   height: 60px;
 }
 
-.front-end-languages .many-more {
+.front-end-languages .many-more, .back-end-languages .many-more {
   margin-top: 1rem;
 }
 
-.front-end-language-container .text-container {
+.front-end-languages-container .text-container, .back-end-languages-container .text-container {
   margin: 1rem 0;
 }
 
-.front-end-language-container .text-container .title {
+.front-end-languages-container .text-container .title, .back-end-languages-container .text-container .title {
   text-transform: capitalize;
   font-size: 1.5rem;
 }
 
-.front-end-language-container .text-container .subtitle {
+.front-end-languages-container .text-container .subtitle, .back-end-languages-container .text-container .subtitle {
   font-size: 0.75rem;
 }
 
-.front-end-language-container .text-container .subtitle .language-name {
+.front-end-languages-container .text-container .subtitle .language-name, .back-end-languages-container .text-container .subtitle .language-name {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   color: #fff;
@@ -791,7 +792,7 @@
   font-size: 1rem;
 }
 
-.front-end-language-container .languages-container {
+.front-end-languages-container .languages-container, .back-end-languages-container .languages-container {
   border-radius: 15px;
   border: 1px solid #fff;
   display: -webkit-box;
@@ -892,7 +893,7 @@ html {
 
 .section-with-background {
   text-align: center;
-  background: #333;
+  background: #333333;
   border-radius: 15px;
   margin: 1rem;
   padding: 1rem 0;
@@ -909,6 +910,14 @@ html {
 }
 
 .section-without-background .section-without-background-name {
+  color: #5378ff;
+}
+
+.red-text {
+  color: #ff3434;
+}
+
+.blue-text {
   color: #5378ff;
 }
 /*# sourceMappingURL=main.css.map */
