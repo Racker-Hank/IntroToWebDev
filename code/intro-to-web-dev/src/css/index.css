@@ -11,6 +11,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+html,
+body {
+	min-width: 100vw;
+}
+
 ::selection {
 	color: #fff;
 	background: #ff3434;

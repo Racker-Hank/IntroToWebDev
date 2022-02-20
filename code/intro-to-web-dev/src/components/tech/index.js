@@ -4,6 +4,7 @@ import SectionBreakText from '../section-break-text';
 import BasicLanguages from './basic-languages';
 import BasicTools from './basic-tools';
 import FrontEndLanguages from './front-end/languages';
+import FrontEndTools from './front-end/tools';
 
 const Tech = () => {
 	return (
@@ -23,6 +24,7 @@ const Tech = () => {
 			/>
 			<section className='front-end' id='front-end'>
 				<FrontEndLanguages />
+				<FrontEndTools />
 			</section>
 		</section>
 	);

@@ -14,8 +14,17 @@ html {
 	overflow-y: scroll;
 }
 
-.section-with-background-name {
-	color: $color-green;
+.section-with-background {
+	text-align: center;
+	background: #333;
+	border-radius: $border-radius;
+	margin: 1rem;
+	padding: 1rem 0;
+	box-shadow: 0px 0px 0px 10px #222222;
+
+	.section-with-background-name {
+		color: $color-green;
+	}
 }
 
 .section-without-background-name {

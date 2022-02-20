@@ -23,34 +23,39 @@
 
 		.language-name-container {
 			display: flex;
-			place-items: center;
 			justify-content: center;
 			margin-bottom: 1rem;
 
-			.language-logo {
-				margin-right: 0.5rem;
-			}
+			.language-link {
+				display: flex;
+				place-items: center;
+				justify-content: center;
 
-			#react-logo,
-			#vue-logo {
-				height: 40px;
-			}
+				.language-logo {
+					margin-right: 0.5rem;
+				}
 
-			#svelte-logo {
-				height: 50px;
-			}
+				#react-logo,
+				#vue-logo {
+					height: 40px;
+				}
 
-			.language-name {
-				text-transform: capitalize;
-				font-size: 2rem;
-				font-family: 'Fira Code';
+				#svelte-logo {
+					height: 50px;
+				}
+
+				.language-name {
+					text-transform: capitalize;
+					font-size: 2rem;
+					font-family: 'Fira Code';
+				}
 			}
 		}
 
 		.description {
 			font-size: 1rem;
 			color: #aaa;
-			width: 32ch;
+			max-width: 32ch;
 			margin: 0 auto 1rem;
 		}
 

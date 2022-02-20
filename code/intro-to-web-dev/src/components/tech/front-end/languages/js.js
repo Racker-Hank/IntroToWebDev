@@ -82,24 +82,26 @@ const JS = () => {
 				{data.map((language) => {
 					return (
 						<div className='language-container' key={language.id}>
-							<a
-								href={language.url}
-								target='blank'
-								className='language-name-container language-link'
-							>
-								<img
-									src={language.img}
-									alt={language.name}
-									className='language-logo'
-									id={language.name + '-logo'}
-								/>
-								<code
-									className='language-name'
-									id={language.name + '-name'}
+							<div className='language-name-container'>
+								<a
+									href={language.url}
+									target='blank'
+									className='language-link'
 								>
-									{language.name}
-								</code>
-							</a>
+									<img
+										src={language.img}
+										alt={language.name}
+										className='language-logo'
+										id={language.name + '-logo'}
+									/>
+									<code
+										className='language-name'
+										id={language.name + '-name'}
+									>
+										{language.name}
+									</code>
+								</a>
+							</div>
 							<p className='description'>{language.description}</p>
 							<div className='frameworks-container'>
 								{language.frameworks.map((framework) => {

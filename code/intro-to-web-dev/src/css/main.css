@@ -714,27 +714,36 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 1rem;
 }
 
-.js-container .languages-container .language-name-container .language-logo {
+.js-container .languages-container .language-name-container .language-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-container .languages-container .language-name-container .language-link .language-logo {
   margin-right: 0.5rem;
 }
 
-.js-container .languages-container .language-name-container #react-logo,
-.js-container .languages-container .language-name-container #vue-logo {
+.js-container .languages-container .language-name-container .language-link #react-logo,
+.js-container .languages-container .language-name-container .language-link #vue-logo {
   height: 40px;
 }
 
-.js-container .languages-container .language-name-container #svelte-logo {
+.js-container .languages-container .language-name-container .language-link #svelte-logo {
   height: 50px;
 }
 
-.js-container .languages-container .language-name-container .language-name {
+.js-container .languages-container .language-name-container .language-link .language-name {
   text-transform: capitalize;
   font-size: 2rem;
   font-family: 'Fira Code';
@@ -743,7 +752,7 @@
 .js-container .languages-container .description {
   font-size: 1rem;
   color: #aaa;
-  width: 32ch;
+  max-width: 32ch;
   margin: 0 auto 1rem;
 }
 
@@ -764,16 +773,6 @@
 
 .js-container .languages-container .frameworks-container .framework-link #remix {
   height: 60px;
-}
-
-.front-end-languages {
-  text-align: center;
-  background: #333;
-  border-radius: 15px;
-  margin: 1rem;
-  padding: 1rem 0;
-  -webkit-box-shadow: 0px 0px 0px 10px #222222;
-          box-shadow: 0px 0px 0px 10px #222222;
 }
 
 .front-end-languages .many-more {
@@ -855,7 +854,17 @@ html {
   overflow-y: scroll;
 }
 
-.section-with-background-name {
+.section-with-background {
+  text-align: center;
+  background: #333;
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 1rem 0;
+  -webkit-box-shadow: 0px 0px 0px 10px #222222;
+          box-shadow: 0px 0px 0px 10px #222222;
+}
+
+.section-with-background .section-with-background-name {
   color: #00e472;
 }
 
