@@ -1,0 +1,39 @@
+.front-end-tools {
+	margin: 3rem 2rem 0;
+
+	.tools-container {
+		.main-tools {
+			display: flex;
+			flex-direction: column;
+			place-items: center;
+			gap: 2rem;
+			margin-bottom: 3rem;
+		}
+	}
+
+	.additional-tools {
+		.logo-group {
+			display: grid;
+			place-items: center;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.5em;
+			grid-auto-flow: row dense;
+			margin-bottom: 1rem;
+
+			$logo-height: 75px;
+			.logo {
+				height: $logo-height;
+			}
+
+			#google-fonts-link,
+			#unsplash-link {
+				grid-column: 1 / span 2;
+
+				#google-fonts,
+				#unsplash {
+					height: $logo-height / 2;
+				}
+			}
+		}
+	}
+}

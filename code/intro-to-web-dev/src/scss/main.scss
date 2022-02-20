@@ -26,7 +26,10 @@ html {
 		color: $color-green;
 	}
 }
+.section-without-background {
+	text-align: center;
 
-.section-without-background-name {
-	color: $color-secondary;
+	.section-without-background-name {
+		color: $color-secondary;
+	}
 }
