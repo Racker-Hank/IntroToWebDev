@@ -40,7 +40,7 @@ const data = [
 			{
 				id: 5,
 				name: 'dynamo',
-				img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/back-end/languages/database/serverless/dynamodb.svg',
+				img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/back-end/languages/database/nosql/dynamodb.svg',
 				url: 'https://aws.amazon.com/dynamodb/',
 			},
 		],
@@ -109,7 +109,7 @@ const data = [
 
 const Databse = () => {
 	return (
-		<div className='backend-container back-end-languages-container'>
+		<div className='database-container back-end-languages-container'>
 			<div className='text-container'>
 				<h3 className='title'>Database Tools</h3>
 				<p className='subtitle'>
@@ -118,11 +118,31 @@ const Databse = () => {
 					data
 				</p>
 			</div>
-			{/* <div className='f'>
-				{data.map((f) => {
-					return <img src={f.tools[0].img} alt='' />;
+			<div className='languages-container'>
+				{data.map((tools) => {
+					return (
+						<div className='tools-container' key={tools.id}>
+							{tools.tools.map((tool) => {
+								return (
+									<a
+										href={tool.url}
+										target='blank'
+										className='language-link'
+										key={tool.id}
+									>
+										<img
+											src={tool.img}
+											alt={tool.name}
+											className='tool-logo'
+											id={tool.name}
+										/>
+									</a>
+								);
+							})}
+						</div>
+					);
 				})}
-			</div> */}
+			</div>
 			<CTAButton text='Find a channel' anchor='/' color='#ff3434' />
 		</div>
 	);

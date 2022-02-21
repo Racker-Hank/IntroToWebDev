@@ -126,7 +126,7 @@ const BackEnd = () => {
 									src={language.img}
 									alt={language.name}
 									className='language-logo'
-									id={language.name + '-logo'}
+									id={language.name}
 								/>
 							</a>
 							<div className='frameworks-container'>

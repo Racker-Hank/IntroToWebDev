@@ -1,0 +1,34 @@
+.database-container {
+	$gap: 2rem;
+	.languages-container {
+		@for $i from 1 to 3 {
+			.tools-container:nth-of-type(#{$i}) {
+				position: relative;
+			}
+
+			.tools-container:nth-of-type(#{$i}):after {
+				content: '';
+				position: absolute;
+				bottom: -$gap / 2;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background: $color-white;
+			}
+		}
+
+		.tools-container {
+			display: grid;
+			place-items: center;
+			gap: 2rem;
+			grid-auto-rows: 5rem;
+
+			.language-link {
+				// #graphql {
+				// 	height: 80px;
+				// 	width: 180px;
+				// }
+			}
+		}
+	}
+}
