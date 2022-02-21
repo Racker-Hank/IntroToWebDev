@@ -1,0 +1,14 @@
+.back-end-tools {
+	.tools-container {
+		display: grid;
+		place-items: center;
+		gap: 1.5rem;
+		margin: 1rem 0;
+
+		.language-link {
+			.logo {
+				height: 3rem;
+			}
+		}
+	}
+}

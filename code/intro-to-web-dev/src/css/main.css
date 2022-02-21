@@ -1053,6 +1053,18 @@
   gap: 2rem;
 }
 
+.back-end-tools .tools-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.back-end-tools .tools-container .language-link .logo {
+  height: 3rem;
+}
+
 #tech .section-break-text:nth-of-type(2) {
   height: 100vh !important;
   padding: 5rem 0;
@@ -1073,6 +1085,10 @@
 #tech .section-break-text:nth-of-type(2) .subtitle:hover,
 #tech .section-break-text:nth-of-type(2) .red-text:hover {
   color: #5378ff;
+}
+
+#tech .back-end {
+  padding-top: 5rem;
 }
 
 #tech .language-link {

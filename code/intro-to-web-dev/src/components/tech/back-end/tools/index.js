@@ -4,19 +4,19 @@ const data = [
 	{
 		id: 0,
 		name: 'stack-overflow',
-		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/8ff5f25dbccda09da165f6d910157675f3f9a299/code/intro-to-web-dev/res/tech/front-end/tools/ui-goodies.svg',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/back-end/tools/stackoverflow.svg',
 		url: 'https://stackoverflow.com/',
 	},
 	{
 		id: 1,
 		name: 'npm',
-		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/8ff5f25dbccda09da165f6d910157675f3f9a299/code/intro-to-web-dev/res/tech/front-end/tools/ui-goodies.svg',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/back-end/tools/npm.svg',
 		url: 'https://www.npmjs.com/',
 	},
 	{
 		id: 2,
 		name: 'yarn',
-		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/8ff5f25dbccda09da165f6d910157675f3f9a299/code/intro-to-web-dev/res/tech/front-end/tools/ui-goodies.svg',
+		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/back-end/tools/yarn.svg',
 		url: 'https://yarnpkg.com/',
 	},
 ];
