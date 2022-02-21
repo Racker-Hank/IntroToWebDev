@@ -1042,12 +1042,6 @@
   display: grid;
   place-items: center;
   gap: 2rem;
-  grid-auto-rows: 5rem;
-}
-
-.database-container .languages-container .tools-container .language-link #graphql {
-  height: 80px;
-  width: 180px;
 }
 
 #tech .section-break-text:nth-of-type(2) {
