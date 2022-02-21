@@ -53,10 +53,30 @@
 
 .nav-container {
   position: fixed;
-  top: 0;
+  top: -5rem;
   left: 0;
   right: 0;
   z-index: 1000;
+  -webkit-animation: nav-slide-down 1.125s ease 7.125s forwards;
+          animation: nav-slide-down 1.125s ease 7.125s forwards;
+}
+
+@-webkit-keyframes nav-slide-down {
+  from {
+    top: -5rem;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes nav-slide-down {
+  from {
+    top: -5rem;
+  }
+  to {
+    top: 0;
+  }
 }
 
 .nav-container nav {
@@ -74,6 +94,7 @@
 }
 
 .nav-container nav #mind {
+  cursor: pointer;
   font-size: 2.25rem;
 }
 
@@ -204,6 +225,7 @@
           flex-direction: column;
   gap: 3rem;
   overflow: hidden;
+  padding: 0 0.5rem;
 }
 
 .hero-section .hero-container .hero-text-container .small-text {
@@ -322,12 +344,13 @@
   width: 0.15em;
   background: #fff;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
-          animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
+  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
+          animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
 }
 
 .hero-section .hero-container .hero-text-container #code {
   cursor: not-allowed;
+  max-width: 24ch;
 }
 
 .hero-section .hero-container .hero-text-container #code::before {
@@ -340,8 +363,8 @@
   width: 0.15em;
   background: #cccccc;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(16) 0.5s forwards, blink calc(6s / 6) steps(16) infinite;
-          animation: typewriter 6s steps(16) 0.5s forwards, blink calc(6s / 6) steps(16) infinite;
+  -webkit-animation: typewriter 6s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
+          animation: typewriter 6s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
 }
 
 .hero-section .hero-container .hero-text-container #build::before {
@@ -354,8 +377,8 @@
   width: 0.15em;
   background: #999999;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
-          animation: typewriter 6s steps(17) 0.5s forwards, blink calc(6s / 6) steps(17) infinite;
+  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
+          animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
 }
 
 @-webkit-keyframes typewriter {
@@ -384,8 +407,9 @@
 
 .hero-section .btn {
   position: absolute;
-  -webkit-animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) infinite;
-          animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) infinite;
+  -webkit-animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) 7.125s infinite;
+          animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) 7.125s infinite;
+  opacity: 0;
 }
 
 @-webkit-keyframes arrow-down {
@@ -472,9 +496,29 @@
   min-width: 130px;
 }
 
+.basic-languages .languages-container .language-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  -webkit-clip-path: polygon(65% 0, 100% 0, 100% 100%, 35% 100%);
+          clip-path: polygon(65% 0, 100% 0, 100% 100%, 35% 100%);
+  background: #999999;
+  border-radius: 10px;
+  opacity: 0.12;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .basic-languages .languages-container .language-container:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#2b2b2b)) padding-box, -webkit-gradient(linear, left bottom, left top, from(#5378ff), color-stop(49.93%, #a964a8), to(#ff5151)) border-box;
   background: linear-gradient(#2b2b2b, #2b2b2b) padding-box, linear-gradient(0deg, #5378ff 0%, #a964a8 49.93%, #ff5151 100%) border-box;
+}
+
+.basic-languages .languages-container .language-container:hover::after {
+  left: 0;
 }
 
 .basic-languages .languages-container .language-container .language-img {
@@ -777,10 +821,11 @@
 .front-end-languages-container .text-container .title, .back-end-languages-container .text-container .title {
   text-transform: capitalize;
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .front-end-languages-container .text-container .subtitle, .back-end-languages-container .text-container .subtitle {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .front-end-languages-container .text-container .subtitle .language-name, .back-end-languages-container .text-container .subtitle .language-name {
@@ -851,6 +896,117 @@
 .front-end-tools .additional-tools .logo-group #unsplash-link #google-fonts,
 .front-end-tools .additional-tools .logo-group #unsplash-link #unsplash {
   height: 37.5px;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(1) {
+  position: relative;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(1):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(2) {
+  position: relative;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(2):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(3) {
+  position: relative;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(3):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(4) {
+  position: relative;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(4):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(5) {
+  position: relative;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(5):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(6) {
+  position: relative;
+}
+
+.backend-container .languages-container .language-container:nth-of-type(6):after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.backend-container .languages-container .language-container {
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.backend-container .languages-container .language-container .language-logo {
+  height: 50px;
+}
+
+.backend-container .languages-container .language-container .frameworks-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.backend-container .languages-container .language-container .frameworks-container .framework-logo {
+  height: 40px;
 }
 
 #tech .section-break-text:nth-of-type(2) {

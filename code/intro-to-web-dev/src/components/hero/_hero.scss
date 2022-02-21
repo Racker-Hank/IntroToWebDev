@@ -13,6 +13,7 @@
 			flex-direction: column;
 			gap: 3rem;
 			overflow: hidden;
+			padding: 0 0.5rem;
 
 			.small-text {
 				font-size: 1rem;
@@ -86,7 +87,7 @@
 				}
 			}
 
-			$typewriterSpeed: 6s;
+			// $typewriterSpeed: 6s;
 			#learn {
 				$steps: 17;
 				$color-blink: $color-white;
@@ -103,7 +104,7 @@
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
 							forwards,
-						blink calc(6s / 6) steps($steps) infinite;
+						blink $typewriterSpeed / 6 steps($steps) infinite;
 				}
 			}
 
@@ -111,6 +112,7 @@
 				$steps: 16;
 				$color-blink: lighten($color-light-grey, 20%);
 				cursor: not-allowed;
+				max-width: 24ch;
 
 				&::before {
 					background: $color-black;
@@ -124,7 +126,7 @@
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
 							forwards,
-						blink calc(6s / 6) steps($steps) infinite;
+						blink $typewriterSpeed / 6 steps($steps) infinite;
 				}
 			}
 
@@ -144,7 +146,7 @@
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
 							forwards,
-						blink calc(6s / 6) steps($steps) infinite;
+						blink $typewriterSpeed / 6 steps($steps) infinite;
 				}
 			}
 
@@ -164,7 +166,9 @@
 
 	.btn {
 		position: absolute;
-		animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) infinite;
+		animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6)
+			$typewriterSpeed + 1.125 infinite;
+		opacity: 0;
 
 		@keyframes arrow-down {
 			from {

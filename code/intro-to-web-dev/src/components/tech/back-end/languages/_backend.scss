@@ -1,0 +1,41 @@
+.backend-container {
+	$gap: 2rem;
+	.languages-container {
+		@for $i from 1 to 7 {
+			.language-container:nth-of-type(#{$i}) {
+				position: relative;
+			}
+
+			.language-container:nth-of-type(#{$i}):after {
+				content: '';
+				position: absolute;
+				bottom: -$gap / 2;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background: $color-white;
+			}
+		}
+
+		.language-container {
+			padding: 0 1rem;
+			display: flex;
+			gap: 4rem;
+
+			.language-logo {
+				height: 50px;
+			}
+
+			.frameworks-container {
+				display: flex;
+				place-items: center;
+				justify-content: center;
+				gap: 2rem;
+
+				.framework-logo {
+					height: 40px;
+				}
+			}
+		}
+	}
+}

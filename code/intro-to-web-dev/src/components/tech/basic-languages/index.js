@@ -37,13 +37,6 @@ const BasicLanguages = React.memo(() => {
 				})}
 			</div>
 			<CTAButton text='Find a channel' anchor='#top' color='#ff3434' />
-			{/* {
-				(window.onscroll = () => {
-					console.log(window.innerHeight);
-					console.log(window.scrollY);
-					console.log(window.scrollY - window.innerHeight / 2);
-				})
-			} */}
 		</section>
 	);
 });
