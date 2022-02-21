@@ -28,7 +28,7 @@ const data = [
 			{
 				id: 3,
 				name: 'graphql',
-				img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/e9571b6d1510fa4917bca56a2732c2057925cc3a/code/intro-to-web-dev/res/tech/back-end/languages/database/nosql/graphql.svg',
+				img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/back-end/languages/database/nosql/graphql.png',
 				url: 'https://graphql.org/',
 			},
 			{

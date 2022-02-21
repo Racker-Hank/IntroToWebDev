@@ -1,9 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Nav = () => {
 	const [isShowMenu, setIsShowMenu] = useState(false);
+	const [isShowNav, setIsShowNav] = useState(false);
+
+	const checkScroll = () => {
+		setIsShowNav(true);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', checkScroll);
+
+		return () => {
+			window.removeEventListener('resize', checkScroll);
+		};
+	}, []);
+
 	return (
-		<div className='nav-container' id='nav'>
+		<div
+			className={`nav-container ${
+				isShowNav ? 'showNav' : 'showNavAnimation'
+			}`}
+			id='nav'
+		>
 			<nav>
 				<a href='https://mindx.edu.vn/' target='blank'>
 					<div className='logo'>

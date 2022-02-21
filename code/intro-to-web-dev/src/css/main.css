@@ -57,26 +57,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  -webkit-animation: nav-slide-down 1.125s ease 7.125s forwards;
-          animation: nav-slide-down 1.125s ease 7.125s forwards;
-}
-
-@-webkit-keyframes nav-slide-down {
-  from {
-    top: -5rem;
-  }
-  to {
-    top: 0;
-  }
-}
-
-@keyframes nav-slide-down {
-  from {
-    top: -5rem;
-  }
-  to {
-    top: 0;
-  }
+  -webkit-transition: all 1.125s ease;
+  transition: all 1.125s ease;
 }
 
 .nav-container nav {
@@ -195,6 +177,33 @@
 .nav-container .hideMenu .menu-item {
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
+}
+
+.showNav {
+  top: 0;
+}
+
+.showNavAnimation {
+  -webkit-animation: nav-slide-down 1.125s ease 7.125s forwards;
+          animation: nav-slide-down 1.125s ease 7.125s forwards;
+}
+
+@-webkit-keyframes nav-slide-down {
+  from {
+    top: -5rem;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes nav-slide-down {
+  from {
+    top: -5rem;
+  }
+  to {
+    top: 0;
+  }
 }
 
 .hero-section {

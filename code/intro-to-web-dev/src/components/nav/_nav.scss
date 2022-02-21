@@ -4,16 +4,7 @@
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	animation: nav-slide-down 1.125s ease $typewriterSpeed + 1.125 forwards;
-
-	@keyframes nav-slide-down {
-		from {
-			top: -5rem;
-		}
-		to {
-			top: 0;
-		}
-	}
+	transition: all 1.125s ease;
 
 	nav {
 		padding: 1rem 2rem;
@@ -103,6 +94,23 @@
 
 		.menu-item {
 			transform: translateY(-100vh);
+		}
+	}
+}
+
+.showNav {
+	top: 0;
+}
+
+.showNavAnimation {
+	animation: nav-slide-down 1.125s ease $typewriterSpeed + 1.125 forwards;
+
+	@keyframes nav-slide-down {
+		from {
+			top: -5rem;
+		}
+		to {
+			top: 0;
 		}
 	}
 }
