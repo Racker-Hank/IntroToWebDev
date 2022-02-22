@@ -10,10 +10,10 @@ const BackEndLanguages = () => {
 			id='back-end-languages'
 		>
 			<h2 className='section-name section-with-background-name'>Back End</h2>
-			<main className='grid-container'>
+			<div className='grid-container'>
 				<BackEnd />
 				<Database />
-			</main>
+			</div>
 			<p className='many-more'>and many many more..</p>
 		</div>
 	);

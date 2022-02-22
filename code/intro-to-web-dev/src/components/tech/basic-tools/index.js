@@ -68,21 +68,22 @@ const BasicTools = () => {
 						);
 					})}
 				</div>
-				<div className='description-container'>
+				<div className='tools-info-container'>
 					{data.map((tool) => {
 						return (
-							<p
-								key={tool.id}
-								className={`description ${
+							<article
+								className={`tool-info ${
 									tool.id > index
 										? 'right'
 										: tool.id < index
 										? 'left'
 										: 'current'
 								}`}
+								key={tool.id}
 							>
-								{tool.description}
-							</p>
+								<h3 className='name'>{tool.name}</h3>
+								<p className='description'>{tool.description}</p>
+							</article>
 						);
 					})}
 				</div>

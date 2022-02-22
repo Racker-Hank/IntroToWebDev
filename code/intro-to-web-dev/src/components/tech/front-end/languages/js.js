@@ -52,7 +52,7 @@ const data = [
 		name: 'svelte',
 		img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/js/svelte/svelte.png',
 		description:
-			'Created by Rich Harris, maintained by Svelte (now part of Vercel), beginner friendly, recently released Svelte3 which receive big support from the community',
+			'Created by Rich Harris, maintained by Svelte (now part of Vercel), beginner friendly, recently released Svelte3 which received big support from the community',
 		url: 'https://svelte.dev/',
 		frameworks: [
 			{

@@ -30,8 +30,6 @@
 			.left,
 			.right {
 				transform: scale(1);
-				cursor: url('https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-tools/git.svg'),
-					auto;
 
 				&:hover,
 				&:focus-visible {
@@ -40,21 +38,29 @@
 			}
 		}
 
-		.description-container {
+		.tools-info-container {
 			margin: 2rem 0 1.5rem;
 			width: 40ch;
-			height: 6rem;
+			height: 8em;
 			overflow: hidden;
 			position: relative;
 
-			.description {
-				width: 40ch;
+			.tool-info {
 				height: max-content;
-				font-size: 0.75rem;
-				color: lighten($color-light-grey, 15);
 				position: absolute;
 				top: 0;
 				transition: all 0.3s ease;
+
+				.name {
+					margin-bottom: 0.5rem;
+					font-size: 1.25rem;
+				}
+
+				.description {
+					font-size: 0.75rem;
+					color: lighten($color-light-grey, 15);
+					width: 40ch;
+				}
 			}
 
 			.current {

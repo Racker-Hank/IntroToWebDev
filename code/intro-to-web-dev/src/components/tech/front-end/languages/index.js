@@ -12,10 +12,10 @@ const FrontEndLanguages = () => {
 			<h2 className='section-name section-with-background-name'>
 				Front End
 			</h2>
-			<main className='grid-container'>
+			<div className='grid-container'>
 				<CSS />
 				<JS />
-			</main>
+			</div>
 			<p className='many-more'>and many many more..</p>
 		</div>
 	);

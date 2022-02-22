@@ -5,6 +5,7 @@
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
+		// grid-auto-rows: 1fr;
 		gap: 2.5rem 0;
 	}
 

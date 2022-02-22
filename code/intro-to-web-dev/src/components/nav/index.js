@@ -63,10 +63,10 @@ const Nav = () => {
 					<li className='menu-item'>
 						<a
 							className='menu-item-link'
-							href='/'
+							href='#channel'
 							onClick={() => setIsShowMenu(false)}
 						>
-							Channels
+							Channel
 						</a>
 					</li>
 				</ul>

@@ -7,6 +7,7 @@ import Nav from './components/nav';
 import Hero from './components/hero';
 import STTButton from './components/buttons/stt-button';
 import Tech from './components/tech';
+import Channel from './components/channel';
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
 		<STTButton />
 		<main>
 			<Tech />
+			<Channel />
 		</main>
 	</React.StrictMode>,
 	document.getElementById('root')

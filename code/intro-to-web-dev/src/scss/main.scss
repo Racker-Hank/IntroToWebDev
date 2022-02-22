@@ -16,7 +16,7 @@ html {
 
 .section-with-background {
 	text-align: center;
-	background: #333333;
+	background: #2c2c2c;
 	border-radius: $border-radius;
 	margin: 1rem;
 	padding: 1rem 0;
@@ -37,8 +37,10 @@ html {
 
 .red-text {
 	color: $color-primary;
+	font-weight: bold;
 }
 
 .blue-text {
 	color: $color-secondary;
+	font-weight: bold;
 }
