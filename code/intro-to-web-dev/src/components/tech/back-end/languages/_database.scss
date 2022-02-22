@@ -19,8 +19,23 @@
 
 		.tools-container {
 			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 			place-items: center;
 			gap: 2rem;
+			padding: 0 1rem;
+
+			.tool-logo {
+				height: 3rem;
+			}
+
+			#sql-server-logo {
+				height: 4rem;
+			}
+
+			#sql-server,
+			#azure {
+				grid-column: span 2;
+			}
 		}
 	}
 }

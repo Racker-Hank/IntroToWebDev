@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = React.memo(() => {
+const Hero = () => {
 	return (
 		<section className='hero-section' id='top'>
 			<div className='hero-container'>
@@ -32,6 +32,6 @@ const Hero = React.memo(() => {
 			</a>
 		</section>
 	);
-});
+};
 
-export default Hero;
+export default React.memo(Hero);

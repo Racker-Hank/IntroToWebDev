@@ -10,11 +10,13 @@ const BackEndLanguages = () => {
 			id='back-end-languages'
 		>
 			<h2 className='section-name section-with-background-name'>Back End</h2>
-			<BackEnd />
-			<Database />
+			<main className='grid-container'>
+				<BackEnd />
+				<Database />
+			</main>
 			<p className='many-more'>and many many more..</p>
 		</div>
 	);
 };
 
-export default BackEndLanguages;
+export default React.memo(BackEndLanguages);

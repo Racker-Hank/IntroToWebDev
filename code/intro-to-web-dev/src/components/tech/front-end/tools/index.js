@@ -158,4 +158,4 @@ const FrontEndTools = () => {
 	);
 };
 
-export default FrontEndTools;
+export default React.memo(FrontEndTools);

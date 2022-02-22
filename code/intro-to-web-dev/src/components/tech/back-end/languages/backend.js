@@ -109,7 +109,7 @@ const BackEnd = () => {
 				<h3 className='title'>Backend Technologies</h3>
 				<p className='subtitle'>
 					<span className='red-text'>Languages</span> and
-					<span className='blue-text'>frameworks</span> to power your
+					<span className='blue-text'> frameworks</span> to power your
 					website
 				</p>
 			</div>

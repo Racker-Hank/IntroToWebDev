@@ -1,6 +1,9 @@
 .back-end-tools {
+	margin: 3rem 2rem 0;
+
 	.tools-container {
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		place-items: center;
 		gap: 1.5rem;
 		margin: 1rem 0;
@@ -10,5 +13,9 @@
 				height: 3rem;
 			}
 		}
+	}
+
+	.many-more {
+		margin-top: 1rem;
 	}
 }

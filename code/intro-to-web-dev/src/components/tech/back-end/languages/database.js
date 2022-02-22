@@ -93,7 +93,7 @@ const data = [
 			},
 			{
 				id: 1,
-				name: 'google-cloud-platform',
+				name: 'gcp',
 				img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/back-end/languages/database/cloud-service/gcp.svg',
 				url: 'https://cloud.google.com/',
 			},
@@ -114,7 +114,7 @@ const Databse = () => {
 				<h3 className='title'>Database Tools</h3>
 				<p className='subtitle'>
 					<span className='red-text'>Apps</span> and
-					<span className='blue-text'>platforms</span> to organize your
+					<span className='blue-text'> platforms</span> to organize your
 					data
 				</p>
 			</div>
@@ -128,13 +128,14 @@ const Databse = () => {
 										href={tool.url}
 										target='blank'
 										className='language-link'
+										id={tool.name}
 										key={tool.id}
 									>
 										<img
 											src={tool.img}
 											alt={tool.name}
 											className='tool-logo'
-											id={tool.name}
+											id={tool.name + '-logo'}
 										/>
 									</a>
 								);

@@ -28,7 +28,7 @@ const data = [
 	},
 ];
 
-const BasicLanguages = React.memo(() => {
+const BasicLanguages = () => {
 	return (
 		<section className='basic-languages' id='basic-languages'>
 			<div className='languages-container'>
@@ -39,7 +39,7 @@ const BasicLanguages = React.memo(() => {
 			<CTAButton text='Find a channel' anchor='#top' color='#ff3434' />
 		</section>
 	);
-});
+};
 
 const Language = (props) => {
 	const { name, description, img, dropShadowColor } = props;
@@ -58,4 +58,4 @@ const Language = (props) => {
 	);
 };
 
-export default BasicLanguages;
+export default React.memo(BasicLanguages);

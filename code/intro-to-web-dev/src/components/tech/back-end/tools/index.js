@@ -54,4 +54,4 @@ const BackEndTools = () => {
 	);
 };
 
-export default BackEndTools;
+export default React.memo(BackEndTools);

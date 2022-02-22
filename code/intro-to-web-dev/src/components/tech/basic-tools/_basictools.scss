@@ -31,7 +31,8 @@
 			.right {
 				transform: scale(1);
 
-				&:hover {
+				&:hover,
+				&:focus-visible {
 					transform: scale(1.2);
 				}
 			}

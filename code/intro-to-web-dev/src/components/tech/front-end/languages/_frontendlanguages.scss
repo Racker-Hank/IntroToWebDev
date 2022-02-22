@@ -2,6 +2,12 @@
 @import './js';
 
 .front-end-languages {
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 2.5rem 0;
+	}
+
 	.many-more {
 		margin-top: 1rem;
 	}
