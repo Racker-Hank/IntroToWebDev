@@ -81,10 +81,14 @@
 .nav-container nav #mind {
   cursor: pointer;
   font-size: 2.25rem;
+  position: relative;
 }
 
 .nav-container nav #x {
-  font-size: 2.375rem;
+  position: absolute;
+  right: -0.6em;
+  top: -2px;
+  font-size: 2.5rem;
   color: #ff3434;
 }
 
@@ -514,6 +518,7 @@
           align-items: center;
   border: 5px solid transparent;
   border-radius: 15px;
+  width: 100%;
   min-width: 130px;
 }
 
@@ -628,6 +633,7 @@
 .basic-tools .tools-container .logos-container .right {
   -webkit-transform: scale(1);
           transform: scale(1);
+  cursor: url("https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-tools/git.svg"), auto;
 }
 
 .basic-tools .tools-container .logos-container .left:hover, .basic-tools .tools-container .logos-container .left:focus-visible,

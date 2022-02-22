@@ -28,7 +28,7 @@ const Nav = () => {
 					<div className='logo'>
 						<p id='mind'>
 							Mind
-							<span id='x'>Y</span>
+							<span id='x'>X</span>
 						</p>
 					</div>
 				</a>

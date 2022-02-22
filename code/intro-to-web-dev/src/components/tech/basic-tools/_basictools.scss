@@ -30,6 +30,8 @@
 			.left,
 			.right {
 				transform: scale(1);
+				cursor: url('https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/basic-tools/git.svg'),
+					auto;
 
 				&:hover,
 				&:focus-visible {
