@@ -10,7 +10,8 @@
 		justify-items: center;
 
 		gap: 2em;
-		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		// grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		grid-template-columns: repeat(2, 1fr);
 
 		.language-container {
 			background: linear-gradient(#2b2b2b, #2b2b2b) padding-box,
