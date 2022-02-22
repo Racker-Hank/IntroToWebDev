@@ -70,7 +70,11 @@ const CSS = () => {
 					})}
 				</div>
 			</div>
-			<CTAButton text='Find a channel' anchor='/' color='#ff3434' />
+			<CTAButton
+				text='Find a channel'
+				anchor='#front-end-channel'
+				color='#ff3434'
+			/>
 		</div>
 	);
 };

@@ -1,0 +1,36 @@
+.footer-container {
+	text-align: center;
+	border-top: 1px solid $color-light-grey;
+	margin-top: 5rem;
+	padding: 2rem;
+
+	.social-container {
+		display: flex;
+		gap: 2rem;
+		place-items: center;
+		justify-content: center;
+		margin-bottom: 1rem;
+
+		.social-link {
+			transition: all 0.3s ease;
+
+			i {
+				transition: all 0.3s ease;
+				font-size: 2rem;
+			}
+
+			&:hover {
+				transform: scale(1.2);
+
+				i {
+					color: $color-secondary;
+				}
+			}
+		}
+	}
+
+	.copyrights {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+}

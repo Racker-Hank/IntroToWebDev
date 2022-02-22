@@ -36,7 +36,7 @@ const BasicLanguages = () => {
 					return <Language key={language.id} {...language} />;
 				})}
 			</div>
-			<CTAButton text='Find a channel' anchor='#top' color='#ff3434' />
+			<CTAButton text='Find a channel' anchor='#roadmap' color='#ff3434' />
 		</section>
 	);
 };

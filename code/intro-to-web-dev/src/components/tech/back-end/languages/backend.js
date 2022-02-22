@@ -152,7 +152,11 @@ const BackEnd = () => {
 					);
 				})}
 			</div>
-			<CTAButton text='Find a channel' anchor='/' color='#ff3434' />
+			<CTAButton
+				text='Find a channel'
+				anchor='web-dev-channel'
+				color='#ff3434'
+			/>
 		</div>
 	);
 };

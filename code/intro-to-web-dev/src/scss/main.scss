@@ -8,6 +8,8 @@
 @import '../components/nav/nav';
 @import '../components/hero/hero';
 @import '../components/tech/tech';
+@import '../components/channel/channel';
+@import '../components/footer/footer';
 
 html {
 	scroll-snap-type: y proximity;
@@ -24,6 +26,9 @@ html {
 
 	.section-with-background-name {
 		color: $color-green;
+		max-width: 16ch;
+		margin: 0 auto;
+		text-transform: uppercase;
 	}
 }
 
@@ -43,4 +48,10 @@ html {
 .blue-text {
 	color: $color-secondary;
 	font-weight: bold;
+}
+
+.many-more {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 1rem;
 }

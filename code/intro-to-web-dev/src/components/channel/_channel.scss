@@ -1,0 +1,30 @@
+@import './roadmap/roadmap';
+
+#channel {
+	.channels-container {
+		margin-top: 2rem;
+
+		.channel-img-container {
+			margin: 1rem 1rem 0;
+			display: grid;
+			gap: 1.5rem;
+
+			.channel-link {
+				display: flex;
+				flex-direction: column;
+				place-items: center;
+				margin: 0 auto;
+				transition: all 0.3s ease;
+
+				&:hover,
+				&:focus-visible {
+					transform: scale(1.1);
+				}
+
+				.channel-img {
+					width: 300px;
+				}
+			}
+		}
+	}
+}

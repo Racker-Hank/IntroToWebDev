@@ -8,6 +8,7 @@ import Hero from './components/hero';
 import STTButton from './components/buttons/stt-button';
 import Tech from './components/tech';
 import Channel from './components/channel';
+import Footer from './components/footer';
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.render(
 			<Tech />
 			<Channel />
 		</main>
+		<Footer />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
