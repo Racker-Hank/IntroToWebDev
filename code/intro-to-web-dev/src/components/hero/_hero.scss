@@ -110,7 +110,7 @@
 
 			#code {
 				$steps: 16;
-				$color-blink: lighten($color-light-grey, 20%);
+				$color-blink: lighten($color-light-grey, 10%);
 				cursor: not-allowed;
 				max-width: 24ch;
 

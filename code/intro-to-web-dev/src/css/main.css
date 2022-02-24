@@ -386,7 +386,7 @@
 
 .hero-section .hero-container .hero-text-container #code::after {
   width: 0.15em;
-  background: #cccccc;
+  background: #b3b3b3;
   visibility: visible;
   -webkit-animation: typewriter 6s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
           animation: typewriter 6s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
@@ -461,6 +461,45 @@
 
 .hero-section .btn a .fa-chevron-down {
   font-size: 1.5rem;
+}
+
+.three-d-container .three-d-shape {
+  position: absolute;
+  -webkit-animation: fade-in 3s ease forwards;
+          animation: fade-in 3s ease forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.three-d-container #cube {
+  top: 15%;
+  left: 60%;
+}
+
+.three-d-container #sphere {
+  top: 45%;
+  left: 20%;
+}
+
+.three-d-container #donut {
+  top: 80%;
+  left: 45%;
 }
 
 .section-break-text {
