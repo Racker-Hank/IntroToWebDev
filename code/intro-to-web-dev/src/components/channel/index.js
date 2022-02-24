@@ -6,21 +6,19 @@ import CrashCourses from './crash-course';
 import FrontEnd from './front-end';
 import WebDev from './web-dev';
 
-const Channel = () => {
-	return (
-		<section id='channel' style={{ paddingTop: '5rem' }}>
-			<SectionBreakText
-				section='channel-start'
-				title='channels to help you out'
-				subtitles={['Amazing', 'sharing their knowledge']}
-				redText='creators'
-			/>
-			<Roadmap />
-			<CrashCourses />
-			<FrontEnd />
-			<WebDev />
-		</section>
-	);
-};
+const Channel = React.forwardRef((props, ref) => (
+	<section id='channel' style={{ paddingTop: '5rem' }} ref={ref}>
+		<SectionBreakText
+			section='channel-start'
+			title='channels to help you out'
+			subtitles={['Amazing', 'sharing their knowledge']}
+			redText='creators'
+		/>
+		<Roadmap />
+		<CrashCourses />
+		<FrontEnd />
+		<WebDev />
+	</section>
+));
 
 export default React.memo(Channel);

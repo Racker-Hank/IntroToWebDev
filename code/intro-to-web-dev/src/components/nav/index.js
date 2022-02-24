@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-const Nav = () => {
+const Nav = (props) => {
 	const [isShowMenu, setIsShowMenu] = useState(false);
 	const [isShowNav, setIsShowNav] = useState(false);
+
+	const { heroInView, techInView, channelInView } = props;
 
 	const checkScroll = () => {
 		setIsShowNav(true);
@@ -44,7 +46,7 @@ const Nav = () => {
 				<ul className='menu-items'>
 					<li className='menu-item'>
 						<a
-							className='menu-item-link active'
+							className={`menu-item-link ${heroInView ? 'active' : ''}`}
 							href='#top'
 							onClick={() => setIsShowMenu(false)}
 						>
@@ -53,7 +55,7 @@ const Nav = () => {
 					</li>
 					<li className='menu-item'>
 						<a
-							className='menu-item-link'
+							className={`menu-item-link ${techInView ? 'active' : ''}`}
 							href='#tech'
 							onClick={() => setIsShowMenu(false)}
 						>
@@ -62,7 +64,9 @@ const Nav = () => {
 					</li>
 					<li className='menu-item'>
 						<a
-							className='menu-item-link'
+							className={`menu-item-link ${
+								channelInView ? 'active' : ''
+							}`}
 							href='#channel'
 							onClick={() => setIsShowMenu(false)}
 						>

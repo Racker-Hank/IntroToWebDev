@@ -59,7 +59,7 @@
   z-index: 1000;
   -webkit-transition: all 1.125s ease;
   transition: all 1.125s ease;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
 }
@@ -1190,7 +1190,7 @@
 }
 
 #channel .channels-container .channel-img-container .channel-link .channel-img {
-  width: 300px;
+  width: 19rem;
 }
 
 .footer-container {

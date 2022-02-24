@@ -25,7 +25,12 @@ const FrontEnd = () => {
 			<div className='channel-img-container'>
 				{data.map((channel) => {
 					return (
-						<a href={channel.url} target='blank' className='channel-link'>
+						<a
+							href={channel.url}
+							target='blank'
+							className='channel-link'
+							key={channel.id}
+						>
 							<img src={channel.img} alt='' className='channel-img' />
 						</a>
 					);

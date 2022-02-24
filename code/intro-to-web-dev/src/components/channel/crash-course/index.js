@@ -35,7 +35,12 @@ const CrashCourses = () => {
 			<div className='channel-img-container'>
 				{data.map((channel) => {
 					return (
-						<a href={channel.url} target='blank' className='channel-link'>
+						<a
+							key={channel.id}
+							href={channel.url}
+							target='blank'
+							className='channel-link'
+						>
 							<img src={channel.img} alt='' className='channel-img' />
 						</a>
 					);

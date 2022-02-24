@@ -74,6 +74,7 @@ const WebDev = () => {
 							target='blank'
 							className='channel-link'
 							id={channel.name}
+							key={channel.id}
 						>
 							<img src={channel.img} alt='' className='channel-img' />
 						</a>
