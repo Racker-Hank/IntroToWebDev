@@ -15,3 +15,20 @@
 		}
 	}
 }
+
+@include media-md {
+	.back-end-tools {
+		margin: 3rem 4rem 0;
+
+		.tools-container {
+			gap: 3rem;
+			margin: 2rem 0;
+
+			.language-link {
+				.logo {
+					height: 5rem;
+				}
+			}
+		}
+	}
+}

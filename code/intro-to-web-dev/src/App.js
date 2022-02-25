@@ -7,18 +7,20 @@ import Hero from './components/hero';
 import ThreeDRandom from './components/3d-random';
 import STTButton from './components/buttons/stt-button';
 import Tech from './components/tech';
+import SectionBreak from './components/section-break';
 import Channel from './components/channel';
 import Footer from './components/footer';
 
 const App = () => {
 	const [heroRef, heroInView] = useInView({
-		threshold: 0.01,
+		threshold: 0.65,
 	});
 	const [techRef, techInView] = useInView({
-		threshold: 0.1,
+		threshold: 0.07,
+		rootMargin: '100px',
 	});
 	const [channelRef, channelInView] = useInView({
-		threshold: 0.05,
+		threshold: 0.1,
 	});
 
 	return (
@@ -33,6 +35,7 @@ const App = () => {
 			<STTButton />
 			<main>
 				<Tech ref={techRef} />
+				<SectionBreak />
 				<Channel ref={channelRef} />
 			</main>
 			<Footer />

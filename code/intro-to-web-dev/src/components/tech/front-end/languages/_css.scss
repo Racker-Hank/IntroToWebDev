@@ -1,6 +1,4 @@
 .css-container {
-	// margin-bottom: 2.5rem;
-
 	#css {
 		background-color: #048fca;
 	}
@@ -41,6 +39,28 @@
 			.language-link {
 				.logo {
 					height: 75px;
+				}
+			}
+		}
+	}
+}
+
+@include media-md {
+	.css-container {
+		.languages-container {
+			.img-container {
+				.svg {
+					height: 200px;
+				}
+			}
+
+			.logo-container {
+				gap: 2rem;
+
+				.language-link {
+					.logo {
+						height: 100px;
+					}
 				}
 			}
 		}

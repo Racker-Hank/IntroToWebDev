@@ -28,3 +28,20 @@
 		}
 	}
 }
+
+@include media-md {
+	#channel {
+		.channels-container {
+			.channel-img-container {
+				margin: 1rem 2rem 0;
+				gap: 2rem;
+
+				.channel-link {
+					.channel-img {
+						width: 30rem;
+					}
+				}
+			}
+		}
+	}
+}

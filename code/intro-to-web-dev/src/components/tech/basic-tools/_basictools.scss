@@ -14,7 +14,7 @@
 		.logos-container {
 			height: 100px;
 			display: flex;
-			gap: 3.5em;
+			gap: 4em;
 			align-items: center;
 
 			.logo {
@@ -85,6 +85,33 @@
 	}
 }
 
-.section-name {
-	font-size: 1.5rem;
+@include media-md {
+	.basic-tools {
+		margin: 3rem 4rem 0;
+
+		.tools-container {
+			.logos-container {
+				height: 150px;
+				gap: 8em;
+
+				.logo {
+					height: 75px;
+				}
+			}
+
+			.tools-info-container {
+				height: 12em;
+
+				.tool-info {
+					.name {
+						font-size: 2rem;
+					}
+
+					.description {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
 }

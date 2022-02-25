@@ -12,3 +12,15 @@
 		font-size: 1rem;
 	}
 }
+
+@include media-md {
+	.section-break-text {
+		.title {
+			font-size: 2.5rem;
+		}
+
+		.subtitle {
+			font-size: 1.25rem;
+		}
+	}
+}

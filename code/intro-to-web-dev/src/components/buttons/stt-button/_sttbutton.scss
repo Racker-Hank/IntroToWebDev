@@ -34,3 +34,9 @@
 .hideSTTBtn {
 	bottom: -2rem;
 }
+
+@include media-md {
+	.stt-btn {
+		right: 4rem;
+	}
+}

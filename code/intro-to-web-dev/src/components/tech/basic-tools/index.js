@@ -42,7 +42,10 @@ const BasicTools = () => {
 	const [index, setIndex] = useState(1);
 
 	return (
-		<section className='basic-tools' id='basic-tools'>
+		<section
+			className='basic-tools section-without-background'
+			id='basic-tools'
+		>
 			<div className='tools-container'>
 				<h2 className='section-name section-without-background-name'>
 					Basic Tools

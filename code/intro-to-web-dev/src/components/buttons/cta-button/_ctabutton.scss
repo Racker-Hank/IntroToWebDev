@@ -12,3 +12,9 @@
 		padding: 0.3rem 3em;
 	}
 }
+
+@include media-md {
+	.cta-btn {
+		font-size: 0.75rem;
+	}
+}

@@ -40,3 +40,35 @@
 		}
 	}
 }
+
+@include media-md {
+	.database-container {
+		.languages-container {
+			.tools-container {
+				padding: 0 2rem;
+				grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+
+				.tool-logo {
+					height: 5rem;
+				}
+
+				#sql-server,
+				#azure {
+					grid-column: span 1;
+				}
+
+				#mariadb {
+					grid-column: span 2;
+				}
+			}
+
+			.tools-container:nth-of-type(3) {
+				grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+
+				.tool-logo {
+					height: 6rem;
+				}
+			}
+		}
+	}
+}

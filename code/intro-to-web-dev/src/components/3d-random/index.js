@@ -25,24 +25,36 @@ const ThreeDRandom = () => {
 	const refs = [cubeRef, sphereRef, donutRef];
 
 	window.addEventListener('mousemove', (e) => {
-		cubeRef.current.style.transform =
-			'translate(' +
-			e.pageX * 0.05 +
-			'px' +
-			',' +
-			e.pageY * 0.05 +
-			'px' +
-			')';
-		sphereRef.current.style.transform =
-			'translate(' + e.pageX * 0.1 + 'px' + ',' + e.pageY * 0.1 + 'px' + ')';
-		donutRef.current.style.transform =
-			'translate(' +
-			e.pageX * 0.025 +
-			'px' +
-			',' +
-			e.pageY * 0.025 +
-			'px' +
-			')';
+		if (cubeRef.current != null) {
+			cubeRef.current.style.transform =
+				'translate(' +
+				e.pageX * 0.05 +
+				'px' +
+				',' +
+				e.pageY * 0.05 +
+				'px' +
+				')';
+		}
+		if (sphereRef.current != null) {
+			sphereRef.current.style.transform =
+				'translate(' +
+				e.pageX * 0.1 +
+				'px' +
+				',' +
+				e.pageY * 0.1 +
+				'px' +
+				')';
+		}
+		if (donutRef.current != null) {
+			donutRef.current.style.transform =
+				'translate(' +
+				e.pageX * 0.025 +
+				'px' +
+				',' +
+				e.pageY * 0.025 +
+				'px' +
+				')';
+		}
 	});
 
 	return (

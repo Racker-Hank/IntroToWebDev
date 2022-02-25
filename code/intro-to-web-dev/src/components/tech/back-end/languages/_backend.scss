@@ -39,3 +39,24 @@
 		}
 	}
 }
+
+@include media-md {
+	.backend-container {
+		.languages-container {
+			.language-container {
+				padding: 0 2rem;
+				gap: 6rem;
+
+				.language-logo {
+					height: 60px;
+				}
+
+				.frameworks-container {
+					.framework-logo {
+						height: 50px;
+					}
+				}
+			}
+		}
+	}
+}

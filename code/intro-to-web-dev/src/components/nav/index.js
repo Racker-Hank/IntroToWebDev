@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import CTAButton from '../buttons/cta-button';
+
 const Nav = (props) => {
 	const [isShowMenu, setIsShowMenu] = useState(false);
 	const [isShowNav, setIsShowNav] = useState(false);
@@ -10,6 +12,16 @@ const Nav = (props) => {
 		setIsShowNav(true);
 	};
 
+	const checkWidth = () => {
+		if (window.innerWidth < 768) {
+			if (!isShowMenu) {
+				setIsShowMenu(false);
+			}
+		} else {
+			setIsShowMenu(false);
+		}
+	};
+
 	useEffect(() => {
 		window.addEventListener('scroll', checkScroll);
 
@@ -17,6 +29,14 @@ const Nav = (props) => {
 			window.removeEventListener('resize', checkScroll);
 		};
 	}, []);
+
+	useEffect(() => {
+		window.addEventListener('resize', checkWidth);
+
+		return () => {
+			window.removeEventListener('resize', checkWidth);
+		};
+	});
 
 	return (
 		<div
@@ -40,7 +60,11 @@ const Nav = (props) => {
 			</nav>
 			<div
 				className={`menu-items-container ${
-					isShowMenu ? 'showMenu' : 'hideMenu'
+					window.innerWidth < 768
+						? isShowMenu
+							? 'showMenu'
+							: 'hideMenu'
+						: ''
 				}`}
 			>
 				<ul className='menu-items'>
@@ -75,6 +99,12 @@ const Nav = (props) => {
 					</li>
 				</ul>
 			</div>
+			<CTAButton
+				text='Learn More'
+				anchor='https://mindx.edu.vn/course/khoa-hoc-lap-trinh-web-cho-hoc-sinh'
+				target='blank'
+				color='#ff3434'
+			/>
 		</div>
 	);
 };

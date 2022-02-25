@@ -181,7 +181,27 @@
 			}
 		}
 
-		a {
+		.fa-chevron-down {
+			font-size: 1rem;
+		}
+	}
+}
+
+@include media-md {
+	.hero-section {
+		.hero-container {
+			.hero-text-container {
+				.small-text {
+					font-size: 1.25rem;
+				}
+
+				.big-text {
+					font-size: 2rem;
+				}
+			}
+		}
+
+		.btn {
 			.fa-chevron-down {
 				font-size: 1.5rem;
 			}

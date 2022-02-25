@@ -45,3 +45,26 @@
 		margin: 0 1rem 1rem;
 	}
 }
+
+@include media-md {
+	.front-end-languages-container {
+		.text-container {
+			.title {
+				font-size: 2rem;
+			}
+
+			.subtitle {
+				font-size: 1.25rem;
+
+				.language-name {
+					font-size: 1.25rem;
+					padding: 0.2em 0.2em 0.1em;
+				}
+			}
+		}
+
+		.languages-container {
+			margin: 0 2rem 1rem;
+		}
+	}
+}

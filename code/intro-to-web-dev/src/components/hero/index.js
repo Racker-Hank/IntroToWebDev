@@ -27,7 +27,7 @@ const Hero = React.forwardRef((props, ref) => (
 				return false;
 			}}
 		>
-			<i className='fa fa-solid fa-chevron-down'></i>
+			<i className='fas fa-solid fa-chevron-down'></i>
 		</a>
 	</section>
 ));

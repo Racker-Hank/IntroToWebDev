@@ -1,0 +1,22 @@
+.section-break-container {
+	display: flex;
+	margin: 5rem 2rem 0;
+	justify-content: center;
+	gap: 1rem;
+
+	img {
+		height: 10em;
+		z-index: -1;
+	}
+}
+
+@include media-md {
+	.section-break-container {
+		margin: 5rem 4rem 0;
+		gap: 4rem;
+
+		img {
+			height: 12em;
+		}
+	}
+}

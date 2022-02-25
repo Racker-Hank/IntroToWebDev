@@ -9,6 +9,7 @@
 @import '../components/hero/hero';
 @import '../components/3d-random/3drandom';
 @import '../components/tech/tech';
+@import '../components/section-break/section-break';
 @import '../components/channel/channel';
 @import '../components/footer/footer';
 
@@ -19,7 +20,7 @@ html {
 
 .section-with-background {
 	text-align: center;
-	background: #2c2c2c;
+	background: #2a2a2a;
 	border-radius: $border-radius;
 	margin: 1rem;
 	padding: 1rem 0;
@@ -51,8 +52,26 @@ html {
 	font-weight: bold;
 }
 
+.section-name {
+	font-size: 1.5rem;
+}
+
 .many-more {
 	font-size: 1rem;
 	font-weight: bold;
 	margin-top: 1rem;
+}
+
+@include media-md {
+	.section-with-background {
+		margin: 1rem 2rem;
+	}
+
+	.section-name {
+		font-size: 2.25rem;
+	}
+
+	.many-more {
+		font-size: 1.25rem;
+	}
 }

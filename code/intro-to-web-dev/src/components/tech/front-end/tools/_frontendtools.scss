@@ -6,7 +6,8 @@
 			display: flex;
 			flex-direction: column;
 			place-items: center;
-			gap: 2rem;
+			justify-content: center;
+			gap: 2rem 4rem;
 			margin-bottom: 3rem;
 		}
 
@@ -32,6 +33,29 @@
 					#google-fonts,
 					#unsplash {
 						height: $logo-height / 2;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-md {
+	.front-end-tools {
+		margin: 3rem 4rem 0;
+
+		.tools-container {
+			.main-tools {
+				flex-direction: row;
+			}
+			.additional-tools {
+				.logo-group {
+					grid-template-columns: repeat(6, 1fr);
+					margin-bottom: 2rem;
+
+					#google-fonts-link,
+					#unsplash-link {
+						grid-column: span 2;
 					}
 				}
 			}
