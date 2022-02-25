@@ -43,7 +43,7 @@
 				}
 
 				&::after {
-					content: url('https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/hero/line4.svg');
+					content: url('https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/hero/line-phone.svg');
 					position: absolute;
 					right: 0;
 					bottom: -0.65em;
@@ -193,6 +193,10 @@
 			.hero-text-container {
 				.small-text {
 					font-size: 1.25rem;
+
+					&::after {
+						content: url('https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/hero/line-tablet.svg');
+					}
 				}
 
 				.big-text {
