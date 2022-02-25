@@ -1,5 +1,6 @@
 .roadmap {
 	margin-top: 3rem !important;
+	padding-bottom: 2rem !important;
 
 	#roadmap-2 {
 		width: 260px !important;
@@ -10,6 +11,22 @@
 	.roadmap {
 		#roadmap-2 {
 			width: 440px !important;
+		}
+	}
+}
+
+@include media-xl {
+	.roadmap {
+		.channel-link {
+			grid-column: span 2;
+
+			#roadmap-1 {
+				width: 800px !important;
+			}
+
+			#roadmap-2 {
+				width: 690px !important;
+			}
 		}
 	}
 }

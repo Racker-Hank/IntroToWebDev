@@ -39,13 +39,13 @@ const Nav = (props) => {
 	});
 
 	return (
-		<section className='header-container'>
-			<div
-				className={`nav-container ${
-					isShowNav ? 'showNav' : 'showNavAnimation'
-				}`}
-				id='nav'
-			>
+		<section
+			className={`header-container ${
+				isShowNav ? 'showNav' : 'showNavAnimation'
+			}`}
+			id='nav'
+		>
+			<div className='nav-container'>
 				<nav>
 					<a href='https://mindx.edu.vn/' target='blank'>
 						<div className='logo'>

@@ -125,3 +125,17 @@
 		}
 	}
 }
+
+@include media-xl {
+	.js-container {
+		.languages-container {
+			.language-container {
+				.language-info-container {
+					.language-name-container {
+						flex: 0 0 35%;
+					}
+				}
+			}
+		}
+	}
+}

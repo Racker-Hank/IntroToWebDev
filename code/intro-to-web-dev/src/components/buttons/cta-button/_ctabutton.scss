@@ -18,3 +18,9 @@
 		font-size: 0.75rem;
 	}
 }
+
+@include media-lg {
+	.cta-btn {
+		font-size: 0.9rem;
+	}
+}

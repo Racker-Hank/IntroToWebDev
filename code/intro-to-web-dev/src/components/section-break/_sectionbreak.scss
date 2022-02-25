@@ -20,3 +20,14 @@
 		}
 	}
 }
+
+@include media-xl {
+	.section-break-container {
+		margin: 5rem 8rem 0;
+		gap: 8rem;
+
+		img {
+			height: 16em;
+		}
+	}
+}

@@ -26,7 +26,7 @@
 			padding: 0 1rem;
 
 			.tool-logo {
-				height: 3rem;
+				height: 4rem;
 			}
 
 			#sql-server-logo {
@@ -49,7 +49,7 @@
 				grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 
 				.tool-logo {
-					height: 5rem;
+					height: auto;
 				}
 
 				#sql-server,
@@ -64,9 +64,30 @@
 
 			.tools-container:nth-of-type(3) {
 				grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+			}
+		}
+	}
+}
 
-				.tool-logo {
-					height: 6rem;
+@include media-xl {
+	.database-container {
+		$gap: 4rem;
+		.languages-container {
+			justify-content: space-between;
+
+			@for $i from 1 to 3 {
+				.tools-container:nth-of-type(#{$i}) {
+					position: relative;
+				}
+
+				.tools-container:nth-of-type(#{$i}):after {
+					content: '';
+					position: absolute;
+					bottom: -$gap / 2;
+					left: 0;
+					height: 1px;
+					width: 100%;
+					background: $color-white;
 				}
 			}
 		}

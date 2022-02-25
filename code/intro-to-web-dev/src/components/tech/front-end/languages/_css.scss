@@ -24,6 +24,7 @@
 		.img-container {
 			display: grid;
 			place-items: center;
+			flex: auto;
 
 			.svg {
 				height: 100px;
@@ -31,6 +32,7 @@
 		}
 
 		.logo-container {
+			flex: auto;
 			display: grid;
 			place-items: center;
 			gap: 1rem;
@@ -62,6 +64,16 @@
 						height: 100px;
 					}
 				}
+			}
+		}
+	}
+}
+
+@include media-xl {
+	.css-container {
+		.languages-container {
+			.logo-container {
+				gap: 0;
 			}
 		}
 	}

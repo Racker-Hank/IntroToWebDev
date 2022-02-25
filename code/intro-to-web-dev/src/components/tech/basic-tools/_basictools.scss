@@ -115,3 +115,34 @@
 		}
 	}
 }
+
+@include media-xl {
+	.basic-tools {
+		margin: 5rem 8rem 0;
+
+		.tools-container {
+			.logos-container {
+				height: 200px;
+				gap: 8em;
+
+				.logo {
+					height: 100px;
+				}
+			}
+
+			.tools-info-container {
+				height: 12em;
+
+				.tool-info {
+					.name {
+						font-size: 2rem;
+					}
+
+					.description {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

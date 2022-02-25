@@ -1,0 +1,9 @@
+@include media-xl {
+	.web-dev-channel {
+		.channel-img-container {
+			#f8 {
+				grid-column: span 2;
+			}
+		}
+	}
+}

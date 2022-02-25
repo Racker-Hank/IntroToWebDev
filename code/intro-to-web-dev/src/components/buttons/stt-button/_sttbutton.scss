@@ -40,3 +40,9 @@
 		right: 4rem;
 	}
 }
+
+@include media-xl {
+	.stt-btn {
+		// right: 8rem;
+	}
+}

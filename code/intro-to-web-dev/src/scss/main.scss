@@ -8,8 +8,9 @@
 @import '../components/nav/nav';
 @import '../components/hero/hero';
 @import '../components/3d-random/3drandom';
+@import '../components/section-break-text/sectionbreaktext';
 @import '../components/tech/tech';
-@import '../components/section-break/section-break';
+@import '../components/section-break/sectionbreak';
 @import '../components/channel/channel';
 @import '../components/footer/footer';
 
@@ -65,6 +66,10 @@ html {
 @include media-md {
 	.section-with-background {
 		margin: 1rem 2rem;
+
+		.section-with-background-name {
+			max-width: none;
+		}
 	}
 
 	.section-name {
@@ -73,5 +78,19 @@ html {
 
 	.many-more {
 		font-size: 1.25rem;
+	}
+}
+
+@include media-xl {
+	.section-with-background {
+		margin: 1rem 8rem;
+	}
+
+	.section-name {
+		font-size: 3rem;
+	}
+
+	.many-more {
+		font-size: 1.5rem;
 	}
 }

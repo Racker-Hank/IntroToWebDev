@@ -2,14 +2,14 @@
 	position: fixed;
 	left: 0;
 	right: 0;
+	z-index: 1000;
+	background: rgba($color-black, 0.82);
+	backdrop-filter: blur(15px);
+	top: -5rem;
+	transition: all 1.125s ease;
 
 	.nav-container {
-		top: -5rem;
 		width: 100%;
-		z-index: 1000;
-		transition: all 1.125s ease;
-		background: rgba($color-black, 0.82);
-		backdrop-filter: blur(15px);
 		display: flex;
 		place-items: center;
 		padding: 1rem 2rem;
@@ -127,21 +127,21 @@
 			display: none;
 		}
 	}
+}
 
-	.showNav {
-		top: 0;
-	}
+.showNav {
+	top: 0;
+}
 
-	.showNavAnimation {
-		animation: nav-slide-down 1.125s ease $typewriterSpeed + 1.125 forwards;
+.showNavAnimation {
+	animation: nav-slide-down 1.125s ease $typewriterSpeed + 1.125 forwards;
 
-		@keyframes nav-slide-down {
-			from {
-				top: -5rem;
-			}
-			to {
-				top: 0;
-			}
+	@keyframes nav-slide-down {
+		from {
+			top: -5rem;
+		}
+		to {
+			top: 0;
 		}
 	}
 }
@@ -153,6 +153,7 @@
 			padding: 1rem 4rem;
 			nav {
 				flex: 0;
+
 				.btn {
 					display: none;
 				}

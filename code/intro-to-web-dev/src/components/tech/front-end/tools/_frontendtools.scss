@@ -47,6 +47,7 @@
 		.tools-container {
 			.main-tools {
 				flex-direction: row;
+				margin-bottom: 4rem;
 			}
 			.additional-tools {
 				.logo-group {
@@ -56,6 +57,37 @@
 					#google-fonts-link,
 					#unsplash-link {
 						grid-column: span 2;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-xl {
+	.front-end-tools {
+		margin: 5rem 8rem 0;
+
+		.tools-container {
+			.main-tools {
+				column-gap: 8rem;
+			}
+
+			.additional-tools {
+				.logo-group {
+					margin-bottom: 3rem;
+
+					$logo-height: 100px;
+					.logo {
+						height: $logo-height;
+					}
+
+					#google-fonts-link,
+					#unsplash-link {
+						#google-fonts,
+						#unsplash {
+							height: $logo-height / 2;
+						}
 					}
 				}
 			}

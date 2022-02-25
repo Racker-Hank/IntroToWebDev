@@ -24,3 +24,15 @@
 		}
 	}
 }
+
+@include media-xl {
+	.section-break-text {
+		.title {
+			font-size: 3rem;
+		}
+
+		.subtitle {
+			font-size: 1.5rem;
+		}
+	}
+}
