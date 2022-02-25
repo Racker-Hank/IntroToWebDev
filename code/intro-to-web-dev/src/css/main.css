@@ -63,11 +63,15 @@
   }
 }
 
-.nav-container {
+.header-container {
   position: fixed;
-  top: -5rem;
   left: 0;
   right: 0;
+}
+
+.header-container .nav-container {
+  top: -5rem;
+  width: 100%;
   z-index: 1000;
   -webkit-transition: all 1.125s ease;
   transition: all 1.125s ease;
@@ -81,7 +85,7 @@
   padding: 1rem 2rem;
 }
 
-.nav-container nav {
+.header-container .nav-container nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -97,21 +101,21 @@
   z-index: 800;
 }
 
-.nav-container nav #mind {
+.header-container .nav-container nav #mind {
   cursor: pointer;
   font-size: 2.25rem;
   position: relative;
   width: 3em;
 }
 
-.nav-container nav #x {
+.header-container .nav-container nav #x {
   position: absolute;
   top: -6%;
   font-size: 2.5rem;
   color: #ff3434;
 }
 
-.nav-container nav .btn {
+.header-container .nav-container nav .btn {
   background: transparent;
   border: none;
   display: -ms-grid;
@@ -120,11 +124,11 @@
   cursor: pointer;
 }
 
-.nav-container nav .btn .fa-bars {
+.header-container .nav-container nav .btn .fa-bars {
   font-size: 1.5rem;
 }
 
-.nav-container .menu-items-container {
+.header-container .nav-container .menu-items-container {
   position: fixed;
   left: 0;
   right: 0;
@@ -140,7 +144,7 @@
   z-index: 700;
 }
 
-.nav-container .menu-items-container .menu-items {
+.header-container .nav-container .menu-items-container .menu-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,81 +160,81 @@
           transform: translateY(-100vh);
 }
 
-.nav-container .menu-items-container .menu-items .menu-item {
+.header-container .nav-container .menu-items-container .menu-items .menu-item {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   z-index: 700;
 }
 
-.nav-container .menu-items-container .menu-items .menu-item-link {
+.header-container .nav-container .menu-items-container .menu-items .menu-item-link {
   color: #999999;
   font-size: 1.5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.nav-container .menu-items-container .menu-items .menu-item-link:hover, .nav-container .menu-items-container .menu-items .menu-item-link:focus-visible {
+.header-container .nav-container .menu-items-container .menu-items .menu-item-link:hover, .header-container .nav-container .menu-items-container .menu-items .menu-item-link:focus-visible {
   color: #ff3434;
 }
 
-.nav-container .menu-items-container .menu-items .active {
+.header-container .nav-container .menu-items-container .menu-items .active {
   color: #fff !important;
 }
 
-.nav-container .showMenu {
+.header-container .nav-container .showMenu {
   opacity: 1;
   height: calc(100vh - 5rem);
 }
 
-.nav-container .showMenu .menu-items {
+.header-container .nav-container .showMenu .menu-items {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.nav-container .showMenu .menu-items .menu-item {
+.header-container .nav-container .showMenu .menu-items .menu-item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.nav-container .showMenu .menu-items .menu-item:nth-child(1) {
+.header-container .nav-container .showMenu .menu-items .menu-item:nth-child(1) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.nav-container .showMenu .menu-items .menu-item:nth-child(2) {
+.header-container .nav-container .showMenu .menu-items .menu-item:nth-child(2) {
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
 
-.nav-container .showMenu .menu-items .menu-item:nth-child(3) {
+.header-container .nav-container .showMenu .menu-items .menu-item:nth-child(3) {
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
 }
 
-.nav-container .hideMenu {
+.header-container .nav-container .hideMenu {
   opacity: 0.5;
   height: 0;
 }
 
-.nav-container .hideMenu .menu-items {
+.header-container .nav-container .hideMenu .menu-items {
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
 }
 
-.nav-container .hideMenu .menu-items .menu-item {
+.header-container .nav-container .hideMenu .menu-items .menu-item {
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
 }
 
-.nav-container .cta-btn {
+.header-container .nav-container .cta-btn {
   display: none;
 }
 
-.showNav {
+.header-container .showNav {
   top: 0;
 }
 
-.showNavAnimation {
+.header-container .showNavAnimation {
   -webkit-animation: nav-slide-down 1.125s ease 7.125s forwards;
           animation: nav-slide-down 1.125s ease 7.125s forwards;
 }
@@ -254,21 +258,21 @@
 }
 
 @media screen and (min-width: 768px) {
-  .nav-container {
+  .header-container .nav-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 1rem 4rem;
   }
-  .nav-container nav {
+  .header-container .nav-container nav {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
   }
-  .nav-container nav .btn {
+  .header-container .nav-container nav .btn {
     display: none;
   }
-  .nav-container .menu-items-container {
+  .header-container .nav-container .menu-items-container {
     position: relative;
     height: -webkit-max-content;
     height: -moz-max-content;
@@ -278,7 +282,7 @@
     -webkit-transform: translateX(0.5em);
             transform: translateX(0.5em);
   }
-  .nav-container .menu-items-container .menu-items {
+  .header-container .nav-container .menu-items-container .menu-items {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     -webkit-box-orient: horizontal;
@@ -286,16 +290,31 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .nav-container .menu-items-container .menu-items .menu-item {
+  .header-container .nav-container .menu-items-container .menu-items .menu-item {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .nav-container .menu-items-container .menu-items .menu-item-link {
+  .header-container .nav-container .menu-items-container .menu-items .menu-item-link {
     font-size: 1rem;
   }
-  .nav-container .cta-btn {
+  .header-container .nav-container .cta-btn {
     display: inline;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .header-container {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .header-container .nav-container {
+    padding: 1rem 8rem;
+    width: 87.5rem;
+  }
+  .header-container .nav-container .menu-items-container .menu-items .menu-item-link {
+    font-size: 1.25rem;
   }
 }
 
@@ -1044,7 +1063,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1rem 2rem;
+  gap: 1rem 3em;
 }
 
 .js-container .languages-container .frameworks-container .framework-link #remix {
@@ -1052,23 +1071,42 @@
 }
 
 @media screen and (min-width: 768px) {
+  .js-container .languages-container .language-container {
+    padding: 1rem 0;
+  }
   .js-container .languages-container .language-container .language-info-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .js-container .languages-container .language-container .language-info-container .language-name-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 35%;
+            flex: 0 0 35%;
+  }
   .js-container .languages-container .language-container .language-info-container .description {
     font-size: 1rem;
     text-align: left;
-    margin: 0 2rem 1rem auto;
-    max-width: 36ch;
+    max-width: none;
+    margin: 0 0 1rem;
   }
   .js-container .languages-container .language-container .frameworks-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .js-container .languages-container .language-container .language-info-container .language-name-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
   }
 }
 
@@ -1511,6 +1549,12 @@
 
 .roadmap #roadmap-2 {
   width: 260px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .roadmap #roadmap-2 {
+    width: 440px !important;
+  }
 }
 
 #channel .channels-container {

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const data = [
 	{
@@ -24,7 +24,15 @@ const ThreeDRandom = () => {
 	const donutRef = useRef(null);
 	const refs = [cubeRef, sphereRef, donutRef];
 
-	window.addEventListener('mousemove', (e) => {
+	useEffect(() => {
+		window.addEventListener('mousemove', mouseEffect);
+
+		return () => {
+			window.removeEventListener('mousemove', mouseEffect);
+		};
+	});
+
+	const mouseEffect = (e) => {
 		if (cubeRef.current != null) {
 			cubeRef.current.style.transform =
 				'translate(' +
@@ -55,20 +63,22 @@ const ThreeDRandom = () => {
 				'px' +
 				')';
 		}
-	});
+	};
 
 	return (
 		<div className='three-d-container'>
 			{data.map((shape) => {
 				return (
-					<img
+					<a
+						href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+						target='blank'
 						key={shape.id}
-						src={shape.img}
-						alt={shape.name}
 						className='three-d-shape'
 						id={shape.name}
 						ref={refs[shape.id]}
-					/>
+					>
+						<img src={shape.img} alt={shape.name} />
+					</a>
 				);
 			})}
 		</div>
