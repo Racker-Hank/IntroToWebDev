@@ -36,33 +36,45 @@ const ThreeDRandom = () => {
 		if (cubeRef.current != null) {
 			cubeRef.current.style.transform =
 				'translate(' +
-				e.pageX * 0.05 +
+				Math.round(e.pageX * 0.05) +
 				'px' +
 				',' +
-				e.pageY * 0.05 +
+				Math.round(e.pageY * 0.05) +
 				'px' +
 				')';
 		}
 		if (sphereRef.current != null) {
 			sphereRef.current.style.transform =
 				'translate(' +
-				e.pageX * 0.1 +
+				Math.round(e.pageX * 0.1) +
 				'px' +
 				',' +
-				e.pageY * 0.1 +
+				Math.round(e.pageY * 0.1) +
 				'px' +
 				')';
 		}
 		if (donutRef.current != null) {
 			donutRef.current.style.transform =
 				'translate(' +
-				e.pageX * 0.025 +
+				Math.round(e.pageX * 0.025) +
 				'px' +
 				',' +
-				e.pageY * 0.025 +
+				Math.round(e.pageY * 0.025) +
 				'px' +
 				')';
 		}
+	};
+
+	const sorry = () => {
+		let code = document.getElementById('code');
+		code.textContent = 'Sorry 😅';
+		setTimeout(() => {
+			code.style.opacity = '0';
+		}, 5000);
+		setTimeout(() => {
+			code.textContent = 'Code It Yourself';
+			code.style.opacity = '1';
+		}, 6000);
 	};
 
 	return (
@@ -76,6 +88,7 @@ const ThreeDRandom = () => {
 						className='three-d-shape'
 						id={shape.name}
 						ref={refs[shape.id]}
+						onClick={sorry}
 					>
 						<img src={shape.img} alt={shape.name} />
 					</a>

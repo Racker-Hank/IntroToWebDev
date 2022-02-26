@@ -76,6 +76,7 @@
 				// padding-right: 0.125em;
 				margin: 0 auto;
 				letter-spacing: 1px;
+				transition: all 0.3s ease;
 
 				&::before,
 				&::after {
@@ -236,6 +237,7 @@
 		.hero-container {
 			display: flex;
 			gap: 4rem;
+			max-width: 72rem;
 
 			.hero-text-container {
 				text-align: left;
@@ -258,6 +260,23 @@
 
 			.hero-img-container {
 				display: block;
+				position: relative;
+				width: 641px;
+				height: 315px;
+				z-index: -1;
+
+				.walk-up-the-stair {
+					position: absolute;
+				}
+
+				#book-1 {
+					top: 187px;
+				}
+
+				#book-3 {
+					bottom: 0;
+					left: 115px;
+				}
 			}
 		}
 	}
