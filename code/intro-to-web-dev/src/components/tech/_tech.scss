@@ -29,6 +29,8 @@
 	.front-end,
 	.back-end {
 		padding-top: 5rem;
+		display: grid;
+		place-items: center;
 	}
 
 	.language-link {

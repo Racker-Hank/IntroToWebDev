@@ -9,9 +9,7 @@ const CTAButton = (props) => {
 			target={target}
 			className='cta-btn'
 			onClick={(e) => {
-				// return false;
-				console.log(e);
-				e.preventDefault();
+				return false;
 			}}
 			style={{
 				backgroundColor: color,

@@ -42,7 +42,7 @@
 
 @include media-md {
 	.front-end-tools {
-		margin: 3rem 4rem 0;
+		margin: 3rem 4rem 0 !important;
 
 		.tools-container {
 			.main-tools {
@@ -66,7 +66,7 @@
 
 @include media-xl {
 	.front-end-tools {
-		margin: 5rem 8rem 0;
+		margin: 5rem 8rem 0 !important;
 
 		.tools-container {
 			.main-tools {

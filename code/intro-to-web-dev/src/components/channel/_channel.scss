@@ -2,6 +2,9 @@
 @import './web-dev/webdev';
 
 #channel {
+	display: grid;
+	place-items: center;
+
 	.channels-container {
 		margin-top: 2rem;
 

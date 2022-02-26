@@ -18,7 +18,7 @@
 
 @include media-md {
 	.back-end-tools {
-		margin: 3rem 4rem 0;
+		margin: 3rem 4rem 0 !important;
 
 		.tools-container {
 			gap: 3rem;
@@ -30,5 +30,11 @@
 				}
 			}
 		}
+	}
+}
+
+@include media-xl {
+	.back-end-tools {
+		margin: 5rem 8rem 0 !important;
 	}
 }

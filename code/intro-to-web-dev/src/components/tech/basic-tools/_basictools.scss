@@ -87,7 +87,7 @@
 
 @include media-md {
 	.basic-tools {
-		margin: 3rem 4rem 0;
+		margin: 3rem 4rem 0 !important;
 
 		.tools-container {
 			.logos-container {
@@ -118,7 +118,7 @@
 
 @include media-xl {
 	.basic-tools {
-		margin: 5rem 8rem 0;
+		margin: 5rem auto 0 !important;
 
 		.tools-container {
 			.logos-container {

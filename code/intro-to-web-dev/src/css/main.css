@@ -993,7 +993,7 @@
 
 @media screen and (min-width: 768px) {
   .basic-tools {
-    margin: 3rem 4rem 0;
+    margin: 3rem 4rem 0 !important;
   }
   .basic-tools .tools-container .logos-container {
     height: 150px;
@@ -1015,7 +1015,7 @@
 
 @media screen and (min-width: 1400px) {
   .basic-tools {
-    margin: 5rem 8rem 0;
+    margin: 5rem auto 0 !important;
   }
   .basic-tools .tools-container .logos-container {
     height: 200px;
@@ -1263,7 +1263,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  gap: 2.5rem 0;
+  gap: 2.5rem 2rem;
 }
 
 .front-end-languages-container .text-container, .back-end-languages-container .text-container {
@@ -1325,6 +1325,7 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     margin: 0 2rem;
+    justify-items: center;
   }
   .front-end-languages-container, .back-end-languages-container {
     display: -webkit-box;
@@ -1334,21 +1335,17 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 44rem;
+    width: 100%;
   }
   .front-end-languages-container .text-container .title, .back-end-languages-container .text-container .title {
     font-size: 2.25rem;
-  }
-  .front-end-languages-container .text-container .subtitle, .back-end-languages-container .text-container .subtitle {
-    font-size: 1.5rem;
-  }
-  .front-end-languages-container .text-container .subtitle .language-name, .back-end-languages-container .text-container .subtitle .language-name {
-    font-size: 1.5rem;
-    padding: 0.2em 0.2em 0.1em;
   }
   .front-end-languages-container .languages-container, .back-end-languages-container .languages-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    margin: 0 0 1rem;
   }
   .front-end-languages-container .cta-btn, .back-end-languages-container .cta-btn {
     -ms-flex-item-align: center;
@@ -1409,7 +1406,7 @@
 
 @media screen and (min-width: 768px) {
   .front-end-tools {
-    margin: 3rem 4rem 0;
+    margin: 3rem 4rem 0 !important;
   }
   .front-end-tools .tools-container .main-tools {
     -webkit-box-orient: horizontal;
@@ -1431,7 +1428,7 @@
 
 @media screen and (min-width: 1400px) {
   .front-end-tools {
-    margin: 5rem 8rem 0;
+    margin: 5rem 8rem 0 !important;
   }
   .front-end-tools .tools-container .main-tools {
     -webkit-column-gap: 8rem;
@@ -1706,7 +1703,7 @@
 
 @media screen and (min-width: 768px) {
   .back-end-tools {
-    margin: 3rem 4rem 0;
+    margin: 3rem 4rem 0 !important;
   }
   .back-end-tools .tools-container {
     gap: 3rem;
@@ -1714,6 +1711,12 @@
   }
   .back-end-tools .tools-container .language-link .logo {
     height: 5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .back-end-tools {
+    margin: 5rem 8rem 0 !important;
   }
 }
 
@@ -1742,6 +1745,9 @@
 #tech .front-end,
 #tech .back-end {
   padding-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 #tech .language-link {
@@ -1793,6 +1799,7 @@
 .roadmap {
   margin-top: 3rem !important;
   padding-bottom: 2rem !important;
+  width: 100%;
 }
 
 .roadmap #roadmap-2 {
@@ -1821,6 +1828,12 @@
   .web-dev-channel .channel-img-container #f8 {
     grid-column: span 2;
   }
+}
+
+#channel {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 #channel .channels-container {
@@ -1979,10 +1992,12 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .section-with-background {
+  .section-with-background,
+  .section-without-background {
     margin: 1rem 2rem;
   }
-  .section-with-background .section-with-background-name {
+  .section-with-background .section-with-background-name,
+  .section-without-background .section-with-background-name {
     max-width: none;
   }
   .section-name {
@@ -1994,8 +2009,11 @@ html {
 }
 
 @media screen and (min-width: 1400px) {
-  .section-with-background {
+  .section-with-background,
+  .section-without-background {
     margin: 1rem 8rem;
+    max-width: 100rem;
+    width: 90%;
   }
   .section-name {
     font-size: 3rem;

@@ -68,7 +68,8 @@ html {
 }
 
 @include media-md {
-	.section-with-background {
+	.section-with-background,
+	.section-without-background {
 		margin: 1rem 2rem;
 
 		.section-with-background-name {
@@ -86,8 +87,11 @@ html {
 }
 
 @include media-xl {
-	.section-with-background {
+	.section-with-background,
+	.section-without-background {
 		margin: 1rem 8rem;
+		max-width: $max-width-xl;
+		width: 90%;
 	}
 
 	.section-name {
