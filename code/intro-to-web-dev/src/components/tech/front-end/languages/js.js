@@ -45,6 +45,12 @@ const data = [
 				img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/js/vue/nuxtjs.svg',
 				url: 'https://nuxtjs.org/',
 			},
+			{
+				id: 1,
+				name: 'gridsome',
+				img: 'https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/tech/front-end/languages/js/vue/gridsome.svg',
+				url: 'https://gridsome.org/',
+			},
 		],
 	},
 	{
@@ -69,10 +75,10 @@ const JS = () => {
 	return (
 		<div className='js-container front-end-languages-container'>
 			<div className='text-container'>
-				<h3 className='title'>level up your JS game</h3>
+				<h3 className='title'>become a pro JS user</h3>
 				<p className='subtitle'>
-					<span className='red-text'>Fun things</span> you can check out
-					after learning{' '}
+					<span className='red-text'>Libraries</span> you can master after
+					learning{' '}
 					<code className='language-name' id='js'>
 						JS
 					</code>

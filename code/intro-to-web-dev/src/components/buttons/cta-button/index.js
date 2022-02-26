@@ -2,13 +2,16 @@ import React from 'react';
 
 const CTAButton = (props) => {
 	const { text, anchor, target, color } = props;
+
 	return (
 		<a
 			href={anchor}
 			target={target}
 			className='cta-btn'
-			onClick={() => {
-				return false;
+			onClick={(e) => {
+				// return false;
+				console.log(e);
+				e.preventDefault();
 			}}
 			style={{
 				backgroundColor: color,
