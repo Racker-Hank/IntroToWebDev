@@ -476,7 +476,7 @@
 
 .hero-section .hero-container .hero-text-container #code {
   cursor: not-allowed;
-  max-width: 24ch;
+  max-width: 18ch;
 }
 
 .hero-section .hero-container .hero-text-container #code::before {

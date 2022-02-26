@@ -114,7 +114,7 @@
 				$steps: 16;
 				$color-blink: lighten($color-light-grey, 10%);
 				cursor: not-allowed;
-				max-width: 24ch;
+				max-width: 18ch;
 
 				&::before {
 					background: $color-black;
