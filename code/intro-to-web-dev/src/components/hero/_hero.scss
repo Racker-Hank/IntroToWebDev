@@ -106,7 +106,7 @@
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
 							forwards,
-						blink $typewriterSpeed / 6 steps($steps) infinite;
+						blink $blinkSpeed steps($steps) infinite;
 				}
 			}
 
@@ -128,7 +128,7 @@
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
 							forwards,
-						blink $typewriterSpeed / 6 steps($steps) infinite;
+						blink $blinkSpeed steps($steps) infinite;
 				}
 			}
 
@@ -148,7 +148,7 @@
 					visibility: visible;
 					animation: typewriter $typewriterSpeed steps($steps) 0.5s
 							forwards,
-						blink $typewriterSpeed / 6 steps($steps) infinite;
+						blink $blinkSpeed steps($steps) infinite;
 				}
 			}
 
@@ -241,6 +241,7 @@
 
 			.hero-text-container {
 				text-align: left;
+				padding-left: 0;
 
 				.small-text {
 					font-size: 1.25rem;

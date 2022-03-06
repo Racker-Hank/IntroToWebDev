@@ -107,7 +107,7 @@ const data = [
 	},
 ];
 
-const Databse = () => {
+const Database = () => {
 	return (
 		<div className='database-container back-end-languages-container'>
 			<div className='text-container'>
@@ -153,4 +153,4 @@ const Databse = () => {
 	);
 };
 
-export default Databse;
+export default Database;

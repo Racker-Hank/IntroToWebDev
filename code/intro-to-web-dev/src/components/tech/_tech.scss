@@ -11,7 +11,7 @@
 		padding: 5rem 0;
 		display: grid;
 		place-items: center;
-		cursor: default;
+		cursor: none;
 
 		scroll-snap-align: start;
 		scroll-snap-stop: always;
@@ -30,7 +30,9 @@
 	.back-end {
 		padding-top: 5rem;
 		display: grid;
-		place-items: center;
+		// place-items: center;
+		align-items: center;
+		justify-items: stretch;
 	}
 
 	.language-link {
@@ -39,6 +41,15 @@
 		&:hover,
 		&:focus-visible {
 			transform: scale(1.1);
+		}
+	}
+}
+
+@include media-xl {
+	#tech {
+		.front-end,
+		.back-end {
+			justify-items: center;
 		}
 	}
 }

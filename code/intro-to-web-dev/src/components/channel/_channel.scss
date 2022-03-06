@@ -3,7 +3,9 @@
 
 #channel {
 	display: grid;
-	place-items: center;
+	// place-items: center;
+	align-items: center;
+	justify-items: stretch;
 
 	.channels-container {
 		margin-top: 2rem;
@@ -52,6 +54,8 @@
 
 @include media-xl {
 	#channel {
+		justify-items: center;
+
 		.channels-container {
 			.channel-img-container {
 				grid-template-columns: repeat(2, 1fr);

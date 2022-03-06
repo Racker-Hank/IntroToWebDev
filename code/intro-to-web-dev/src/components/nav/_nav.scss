@@ -5,7 +5,7 @@
 	z-index: 1000;
 	background: rgba($color-black, 0.82);
 	backdrop-filter: blur(15px);
-	top: -5rem;
+	top: -6rem;
 	transition: all 1.125s ease;
 
 	.nav-container {
@@ -138,7 +138,7 @@
 
 	@keyframes nav-slide-down {
 		from {
-			top: -5rem;
+			top: -6rem;
 		}
 		to {
 			top: 0;

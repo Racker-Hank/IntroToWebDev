@@ -25,12 +25,17 @@
 			gap: 2rem;
 			padding: 0 1rem;
 
-			.tool-logo {
-				height: 4rem;
-			}
+			// .tool-logo {
+			// 	height: 4rem;
+			// }
 
-			#sql-server-logo {
-				height: 4rem;
+			// #sql-server-logo {
+			// 	height: 4rem;
+			// }
+
+			.tool-logo {
+				height: auto;
+				max-height: 4rem;
 			}
 
 			#sql-server,
@@ -48,8 +53,12 @@
 				padding: 0 2rem;
 				grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 
+				// .tool-logo {
+				// 	height: auto;
+				// }
+
 				.tool-logo {
-					height: auto;
+					max-height: none;
 				}
 
 				#sql-server,

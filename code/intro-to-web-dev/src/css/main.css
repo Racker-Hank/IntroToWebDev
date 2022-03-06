@@ -77,7 +77,7 @@
   background: rgba(0, 0, 0, 0.82);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  top: -5rem;
+  top: -6rem;
   -webkit-transition: all 1.125s ease;
   transition: all 1.125s ease;
 }
@@ -241,13 +241,13 @@
 }
 
 .showNavAnimation {
-  -webkit-animation: nav-slide-down 1.125s ease 7.125s forwards;
-          animation: nav-slide-down 1.125s ease 7.125s forwards;
+  -webkit-animation: nav-slide-down 1.125s ease 5.125s forwards;
+          animation: nav-slide-down 1.125s ease 5.125s forwards;
 }
 
 @-webkit-keyframes nav-slide-down {
   from {
-    top: -5rem;
+    top: -6rem;
   }
   to {
     top: 0;
@@ -256,7 +256,7 @@
 
 @keyframes nav-slide-down {
   from {
-    top: -5rem;
+    top: -6rem;
   }
   to {
     top: 0;
@@ -462,16 +462,16 @@
 
 .hero-section .hero-container .hero-text-container #learn::before {
   background: #000;
-  -webkit-animation: typewriter 6s steps(17) 0.5s forwards;
-          animation: typewriter 6s steps(17) 0.5s forwards;
+  -webkit-animation: typewriter 4s steps(17) 0.5s forwards;
+          animation: typewriter 4s steps(17) 0.5s forwards;
 }
 
 .hero-section .hero-container .hero-text-container #learn::after {
   width: 0.15em;
   background: #fff;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
-          animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
+  -webkit-animation: typewriter 4s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
+          animation: typewriter 4s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
 }
 
 .hero-section .hero-container .hero-text-container #code {
@@ -481,30 +481,30 @@
 
 .hero-section .hero-container .hero-text-container #code::before {
   background: #000;
-  -webkit-animation: typewriter 6s steps(16) 0.5s forwards;
-          animation: typewriter 6s steps(16) 0.5s forwards;
+  -webkit-animation: typewriter 4s steps(16) 0.5s forwards;
+          animation: typewriter 4s steps(16) 0.5s forwards;
 }
 
 .hero-section .hero-container .hero-text-container #code::after {
   width: 0.15em;
   background: #b3b3b3;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
-          animation: typewriter 6s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
+  -webkit-animation: typewriter 4s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
+          animation: typewriter 4s steps(16) 0.5s forwards, blink 1s steps(16) infinite;
 }
 
 .hero-section .hero-container .hero-text-container #build::before {
   background: #000;
-  -webkit-animation: typewriter 6s steps(17) 0.5s forwards;
-          animation: typewriter 6s steps(17) 0.5s forwards;
+  -webkit-animation: typewriter 4s steps(17) 0.5s forwards;
+          animation: typewriter 4s steps(17) 0.5s forwards;
 }
 
 .hero-section .hero-container .hero-text-container #build::after {
   width: 0.15em;
   background: #999999;
   visibility: visible;
-  -webkit-animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
-          animation: typewriter 6s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
+  -webkit-animation: typewriter 4s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
+          animation: typewriter 4s steps(17) 0.5s forwards, blink 1s steps(17) infinite;
 }
 
 @-webkit-keyframes typewriter {
@@ -565,8 +565,8 @@
 
 .hero-section .btn {
   position: absolute;
-  -webkit-animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) 7.125s infinite;
-          animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) 7.125s infinite;
+  -webkit-animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) 5.125s infinite;
+          animation: arrow-down 1.125s cubic-bezier(0.39, 0.37, 1, 2.6) 5.125s infinite;
   opacity: 0;
 }
 
@@ -624,6 +624,7 @@
   }
   .hero-section .hero-container .hero-text-container {
     text-align: left;
+    padding-left: 0;
   }
   .hero-section .hero-container .hero-text-container .small-text {
     font-size: 1.25rem;
@@ -959,7 +960,8 @@
 
 .basic-tools .tools-container .tools-info-container {
   margin: 2rem 0 1.5rem;
-  width: 40ch;
+  width: 80vw;
+  max-width: 40ch;
   height: 8em;
   overflow: hidden;
   position: relative;
@@ -983,7 +985,8 @@
 .basic-tools .tools-container .tools-info-container .tool-info .description {
   font-size: 0.75rem;
   color: #bfbfbf;
-  width: 40ch;
+  width: 80vw;
+  max-width: 40ch;
 }
 
 .basic-tools .tools-container .tools-info-container .current {
@@ -1629,11 +1632,8 @@
 }
 
 .database-container .languages-container .tools-container .tool-logo {
-  height: 4rem;
-}
-
-.database-container .languages-container .tools-container #sql-server-logo {
-  height: 4rem;
+  height: auto;
+  max-height: 4rem;
 }
 
 .database-container .languages-container .tools-container #sql-server,
@@ -1649,7 +1649,7 @@
         grid-template: repeat(2, 1fr)/repeat(3, 1fr);
   }
   .database-container .languages-container .tools-container .tool-logo {
-    height: auto;
+    max-height: none;
   }
   .database-container .languages-container .tools-container #sql-server,
   .database-container .languages-container .tools-container #azure {
@@ -1743,7 +1743,7 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
-  cursor: default;
+  cursor: none;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -1764,7 +1764,10 @@
   padding-top: 5rem;
   display: -ms-grid;
   display: grid;
-  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: stretch;
 }
 
 #tech .language-link {
@@ -1775,6 +1778,13 @@
 #tech .language-link:hover, #tech .language-link:focus-visible {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (min-width: 1400px) {
+  #tech .front-end,
+  #tech .back-end {
+    justify-items: center;
+  }
 }
 
 .section-break-container {
@@ -1816,7 +1826,6 @@
 .roadmap {
   margin-top: 3rem !important;
   padding-bottom: 2rem !important;
-  width: 100%;
 }
 
 .roadmap #roadmap-2 {
@@ -1850,7 +1859,10 @@
 #channel {
   display: -ms-grid;
   display: grid;
-  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: stretch;
 }
 
 #channel .channels-container {
@@ -1898,6 +1910,9 @@
 }
 
 @media screen and (min-width: 1400px) {
+  #channel {
+    justify-items: center;
+  }
   #channel .channels-container .channel-img-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
