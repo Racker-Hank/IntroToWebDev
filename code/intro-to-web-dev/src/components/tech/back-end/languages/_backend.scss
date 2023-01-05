@@ -9,7 +9,7 @@
 			.language-container:nth-of-type(#{$i}):after {
 				content: '';
 				position: absolute;
-				bottom: -$gap / 2;
+				bottom: -calc($gap / 2);
 				left: 0;
 				height: 1px;
 				width: 100%;

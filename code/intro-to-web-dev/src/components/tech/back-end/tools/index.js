@@ -49,7 +49,7 @@ const BackEndTools = () => {
 					);
 				})}
 			</div>
-			<p className='many-more'>and that's all, really :)</p>
+			{/* <p className='many-more'>and that's all, really :)</p> */}
 		</div>
 	);
 };

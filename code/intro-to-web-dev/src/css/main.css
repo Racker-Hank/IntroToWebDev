@@ -96,7 +96,7 @@
   color: #ff3434;
 }
 .header-container .nav-container nav #mindX-logo {
-  width: 120px;
+  width: 9rem;
 }
 .header-container .nav-container nav .btn {
   background: transparent;
@@ -112,7 +112,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 5rem;
+  top: 4rem;
   height: 0;
   text-align: center;
   display: grid;
@@ -146,7 +146,7 @@
 }
 .header-container .nav-container .showMenu {
   opacity: 1;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 4rem);
 }
 .header-container .nav-container .showMenu .menu-items {
   transform: translateY(0);
@@ -211,7 +211,7 @@
     flex: 0;
   }
   .header-container .nav-container nav #mindX-logo {
-    min-width: 140px;
+    min-width: 9rem;
   }
   .header-container .nav-container nav .btn {
     display: none;
@@ -223,7 +223,6 @@
     height: max-content;
     background: transparent;
     top: 0;
-    transform: translateX(0.5em);
   }
   .header-container .nav-container .menu-items-container .menu-items {
     transform: translateY(0);
@@ -247,10 +246,10 @@
   }
   .header-container .nav-container {
     padding: 1rem 8rem;
-    width: 87.5rem;
+    width: 87rem;
   }
   .header-container .nav-container nav #mindX-logo {
-    min-width: 180px;
+    min-width: 10rem;
   }
   .header-container .nav-container .menu-items-container .menu-items .menu-item-link {
     font-size: 1.25rem;
@@ -1156,7 +1155,7 @@
 .backend-container .languages-container .language-container:nth-of-type(1):after {
   content: "";
   position: absolute;
-  bottom: -1rem;
+  bottom: -calc(1rem);
   left: 0;
   height: 1px;
   width: 100%;
@@ -1168,7 +1167,7 @@
 .backend-container .languages-container .language-container:nth-of-type(2):after {
   content: "";
   position: absolute;
-  bottom: -1rem;
+  bottom: -calc(1rem);
   left: 0;
   height: 1px;
   width: 100%;
@@ -1180,7 +1179,7 @@
 .backend-container .languages-container .language-container:nth-of-type(3):after {
   content: "";
   position: absolute;
-  bottom: -1rem;
+  bottom: -calc(1rem);
   left: 0;
   height: 1px;
   width: 100%;
@@ -1192,7 +1191,7 @@
 .backend-container .languages-container .language-container:nth-of-type(4):after {
   content: "";
   position: absolute;
-  bottom: -1rem;
+  bottom: -calc(1rem);
   left: 0;
   height: 1px;
   width: 100%;
@@ -1204,7 +1203,7 @@
 .backend-container .languages-container .language-container:nth-of-type(5):after {
   content: "";
   position: absolute;
-  bottom: -1rem;
+  bottom: -calc(1rem);
   left: 0;
   height: 1px;
   width: 100%;
@@ -1216,7 +1215,7 @@
 .backend-container .languages-container .language-container:nth-of-type(6):after {
   content: "";
   position: absolute;
-  bottom: -1rem;
+  bottom: -calc(1rem);
   left: 0;
   height: 1px;
   width: 100%;
