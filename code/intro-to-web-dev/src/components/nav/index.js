@@ -48,12 +48,13 @@ const Nav = (props) => {
 			<div className='nav-container'>
 				<nav>
 					<a href='https://mindx.edu.vn/' target='blank'>
-						<div className='logo'>
+						{/* <div className='logo'>
 							<p id='mind'>
 								Mind
 								<span id='x'>X</span>
 							</p>
-						</div>
+						</div> */}
+						<img src='../../../res/nav/mindX-logo.svg' alt='mindX-logo' />
 					</a>
 					<button
 						className='btn'

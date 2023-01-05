@@ -26,7 +26,9 @@ const Footer = () => {
 					<i className='fab fa-facebook'></i>
 				</a>
 			</div>
-			<p className='copyrights'>&copy; Copyright MindX 2022</p>
+			<p className='copyrights'>
+				&copy; Copyright MindX {new Date().getFullYear()}
+			</p>
 		</section>
 	);
 };
