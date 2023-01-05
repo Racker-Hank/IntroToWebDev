@@ -54,7 +54,10 @@ const Nav = (props) => {
 								<span id='x'>X</span>
 							</p>
 						</div> */}
-						<img src='../../../res/nav/mindX-logo.svg' alt='mindX-logo' />
+						<img
+							src='https://raw.githubusercontent.com/Racker-Hank/IntroToWebDev/master/code/intro-to-web-dev/res/nav/mindX-logo.png'
+							alt='mindX-logo'
+						/>
 					</a>
 					<button
 						className='btn'
