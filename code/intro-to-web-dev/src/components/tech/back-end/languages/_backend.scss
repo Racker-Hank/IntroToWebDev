@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .backend-container {
 	$gap: 2rem;
 	.languages-container {
@@ -9,7 +11,7 @@
 			.language-container:nth-of-type(#{$i}):after {
 				content: '';
 				position: absolute;
-				bottom: -calc($gap / 2);
+				bottom: -$gap / 2;
 				left: 0;
 				height: 1px;
 				width: 100%;
